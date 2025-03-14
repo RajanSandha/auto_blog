@@ -22,8 +22,8 @@ title_separator          : "|"
 subtitle                 : "AI-Generated Tech News and Updates" # site tagline that appears below site title in masthead
 name                     : "Rajan Sandha"
 description              : "Daily tech news blog powered by AI, covering the latest in technology, AI, programming, and more."
-url                      : "https://rajansandha.github.io" # the base hostname & protocol for your site
-baseurl                  : "/auto_blog" # the subpath of your site, e.g. "/blog"
+url                      : "http://blog.lynxo.in" # the base hostname & protocol for your site
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "RajanSandha/auto_blog" # GitHub username/repo-name
 teaser                   : "/assets/images/teaser.jpg" # fallback teaser image
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -32,7 +32,7 @@ breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 enable_copy_code_button  : true # true, false (default)
 copyright                : "Rajan Sandha" # "copyright" name, defaults to site.title
-copyright_url            : "https://rajansandha.github.io/auto_blog" # "copyright" URL, defaults to site.url
+copyright_url            : "http://blog.lynxo.in" # "copyright" URL, defaults to site.url
 comments:
   provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
@@ -124,7 +124,7 @@ author:
       url: "mailto:rajansandha21@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://rajansandha.github.io/auto_blog"
+      url: "http://blog.lynxo.in"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/RajanSandha"
