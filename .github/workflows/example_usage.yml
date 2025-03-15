@@ -1,0 +1,38 @@
+name: Example AutoBlog Usage
+
+on:
+  schedule:
+    # Run daily at 8:00 AM UTC
+    - cron: '0 8 * * *'
+  # Allow manual triggering
+  workflow_dispatch:
+
+jobs:
+  generate-posts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      # Use the AutoBlog Generator action
+      - name: Generate blog posts
+        uses: RajanSandha/auto_blog@main
+        with:
+          # Required
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Optional - provide from secrets for security
+          openai_api_key: ${{ secrets.OPENAI_API_KEY }}
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          google_api_key: ${{ secrets.GOOGLE_API_KEY }}
+          google_cse_id: ${{ secrets.GOOGLE_CSE_ID }}
+          
+          # Optional configuration with defaults
+          use_openai: 'true'
+          use_anthropic: 'false'
+          model_temperature: '0.7'
+          max_tokens: '4000'
+          num_posts: '3'
+          posts_path: '_posts' 
