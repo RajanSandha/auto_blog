@@ -52,19 +52,11 @@
           </div>
         {% endif %}
       
-      {% when "adsterra" %}
+        {% when "adsterra" %}
         {% if site.advertisements.adsterra.publisher_id %}
           <div class="ad-container adsterra-ad">
-            <script type="text/javascript">
-              var atOptions = {
-                key: '{{ site.advertisements.adsterra.publisher_id }}',
-                format: 'iframe',
-                height: 600,
-                width: 160,
-                params: {}
-              };
-              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkprofit.com/{{ site.advertisements.adsterra.publisher_id }}/invoke.js"></scr' + 'ipt>');
-            </script>
+            <script async="async" data-cfasync="false" src="//pl26398805.profitableratecpm.com/{{ site.advertisements.adsterra.publisher_id }}/invoke.js"></script>
+            <div id="container-{{ site.advertisements.adsterra.publisher_id }}"></div>
           </div>
         {% endif %}
       

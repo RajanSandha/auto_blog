@@ -113,7 +113,7 @@ analytics:
 # Advertisement Settings
 advertisements:
   enable                 : true # true, false (default)
-  provider               : # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
+  provider               : "adsterra" # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
   position               : sidebar # sidebar, content, header
   # Google AdSense
   adsense:
@@ -130,7 +130,7 @@ advertisements:
     site_id              : # Raptive Site ID
   # Adsterra
   adsterra:
-    publisher_id         : # Adsterra Publisher ID
+    publisher_id         : 9be2d2a49268b7c068a186289c485e73
   # PropellerAds
   propeller:
     publisher_id         : # PropellerAds Publisher ID
@@ -164,7 +164,7 @@ footer:
       url: "https://twitter.com/RajanSandha"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/rajansandha21"
+      url: "https://www.facebook.com/people/RAJ-Workplace/61574996060950"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/RajanSandha"
