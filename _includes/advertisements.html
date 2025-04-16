@@ -1,0 +1,87 @@
+{% if site.advertisements.enable %}
+  <div class="advertisement-wrapper">
+    {% case site.advertisements.provider %}
+      {% when "adsense" %}
+        {% if site.advertisements.adsense.client_id and site.advertisements.adsense.sidebar_ad_slot %}
+          <div class="ad-container adsense-ad">
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.advertisements.adsense.client_id }}"
+                 crossorigin="anonymous"></script>
+            <!-- Sidebar Ad -->
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="{{ site.advertisements.adsense.client_id }}"
+                 data-ad-slot="{{ site.advertisements.adsense.sidebar_ad_slot }}"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        {% endif %}
+      
+      {% when "mediavine" %}
+        {% if site.advertisements.mediavine.site_id %}
+          <div class="ad-container mediavine-ad">
+            <div id="mediavine-sidebar" data-site-id="{{ site.advertisements.mediavine.site_id }}"></div>
+            <script src="https://scripts.mediavine.com/tags/{{ site.advertisements.mediavine.site_id }}.js" async></script>
+          </div>
+        {% endif %}
+      
+      {% when "ezoic" %}
+        {% if site.advertisements.ezoic.site_id %}
+          <div class="ad-container ezoic-ad">
+            <div id="ezoic-pub-ad-placeholder-sidebar"></div>
+            <script>
+              var ezstandalone = ezstandalone || {};
+              ezstandalone.cmd = ezstandalone.cmd || [];
+              ezstandalone.cmd.push(function() {
+                ezstandalone.define({{ site.advertisements.ezoic.site_id }});
+                ezstandalone.enable();
+                ezstandalone.display();
+              });
+            </script>
+            <script src="//www.ezojs.com/ezoic/sa.min.js" async></script>
+          </div>
+        {% endif %}
+      
+      {% when "raptive" %}
+        {% if site.advertisements.raptive.site_id %}
+          <div class="ad-container raptive-ad">
+            <div id="raptive-sidebar"></div>
+            <script async src="https://cdn.raptive.com/{{ site.advertisements.raptive.site_id }}/sidebar.js"></script>
+          </div>
+        {% endif %}
+      
+      {% when "adsterra" %}
+        {% if site.advertisements.adsterra.publisher_id %}
+          <div class="ad-container adsterra-ad">
+            <script type="text/javascript">
+              var atOptions = {
+                key: '{{ site.advertisements.adsterra.publisher_id }}',
+                format: 'iframe',
+                height: 600,
+                width: 160,
+                params: {}
+              };
+              document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.displaynetworkprofit.com/{{ site.advertisements.adsterra.publisher_id }}/invoke.js"></scr' + 'ipt>');
+            </script>
+          </div>
+        {% endif %}
+      
+      {% when "propeller" %}
+        {% if site.advertisements.propeller.publisher_id %}
+          <div class="ad-container propeller-ad">
+            <script type="text/javascript">
+              var propellerAfProps = {
+                id: '{{ site.advertisements.propeller.publisher_id }}',
+                size: '300x600',
+                format: 'sidebar-sticky'
+              };
+            </script>
+            <script type="text/javascript" src="//propeller-api.mgid.com/api/propeller.js"></script>
+          </div>
+        {% endif %}
+      
+    {% endcase %}
+  </div>
+{% endif %} 

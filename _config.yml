@@ -110,6 +110,30 @@ analytics:
     tracking_id          : "G-PRF8ZRE7PV"
     anonymize_ip         : # true, false (default)
 
+# Advertisement Settings
+advertisements:
+  enable                 : true # true, false (default)
+  provider               : # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
+  position               : sidebar # sidebar, content, header
+  # Google AdSense
+  adsense:
+    client_id            : # e.g. ca-pub-1234567890123456
+    sidebar_ad_slot      : # AdSense Ad Slot ID
+  # Mediavine
+  mediavine:
+    site_id              : # Mediavine Site ID
+  # Ezoic
+  ezoic:
+    site_id              : # Ezoic Site ID
+  # Raptive
+  raptive:
+    site_id              : # Raptive Site ID
+  # Adsterra
+  adsterra:
+    publisher_id         : # Adsterra Publisher ID
+  # PropellerAds
+  propeller:
+    publisher_id         : # PropellerAds Publisher ID
 
 # Site Author
 author:
@@ -146,10 +170,8 @@ footer:
       url: "https://github.com/RajanSandha"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
-      # url: 
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/_sandha_"

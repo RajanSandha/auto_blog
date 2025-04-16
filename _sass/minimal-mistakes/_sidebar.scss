@@ -347,3 +347,41 @@
     margin-inline-end: initial;
   }
 }
+
+/*
+   Advertisement Styling
+   ========================================================================== */
+
+.sidebar-ad-section {
+  margin-top: 2em;
+  padding: 1em;
+  border-radius: 4px;
+  background-color: rgba(darken($background-color, 5%), 0.5);
+}
+
+.advertisement-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 250px;
+}
+
+.ad-container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+// Media query for responsive ads
+@media (max-width: $medium) {
+  .sidebar-ad-section {
+    margin-top: 1em;
+    padding: 0.5em;
+  }
+  
+  .advertisement-wrapper {
+    min-height: 200px;
+  }
+}
