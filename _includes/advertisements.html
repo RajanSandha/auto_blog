@@ -27,23 +27,6 @@
           </div>
         {% endif %}
       
-      {% when "ezoic" %}
-        {% if site.advertisements.ezoic.site_id %}
-          <div class="ad-container ezoic-ad">
-            <div id="ezoic-pub-ad-placeholder-sidebar"></div>
-            <script>
-              var ezstandalone = ezstandalone || {};
-              ezstandalone.cmd = ezstandalone.cmd || [];
-              ezstandalone.cmd.push(function() {
-                ezstandalone.define({{ site.advertisements.ezoic.site_id }});
-                ezstandalone.enable();
-                ezstandalone.display();
-              });
-            </script>
-            <script src="//www.ezojs.com/ezoic/sa.min.js" async></script>
-          </div>
-        {% endif %}
-      
       {% when "raptive" %}
         {% if site.advertisements.raptive.site_id %}
           <div class="ad-container raptive-ad">

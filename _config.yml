@@ -28,7 +28,7 @@ repository               : "RajanSandha/auto_blog" # GitHub username/repo-name
 teaser                   : "/assets/images/teaser.jpg" # fallback teaser image
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : "AutoBlog" # overrides the website title displayed in the masthead
-breadcrumbs              : true # true, false (default)
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 150
 enable_copy_code_button  : true # true, false (default)
 copyright                : "Rajan Sandha" # "copyright" name, defaults to site.title
@@ -63,8 +63,8 @@ comments:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                :6Le3lR4rAAAAAIqfDRydfW8cgdsWRucE7fMWcS6h
+  secret                 :6Le3lR4rAAAAAC02efrKY2XbxlTyuhGSx7KDMmNO
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
@@ -255,7 +255,7 @@ paginate_path: /page:num/
 #   for configuration details
 pagination:
   # Set enabled to true to use paginate v2
-  # enabled: true
+  enabled: true
   debug: false
   collection: 'posts'
   per_page: 15
