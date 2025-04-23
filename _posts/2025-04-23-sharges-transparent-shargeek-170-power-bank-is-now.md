@@ -50,9 +50,9 @@ Available at Fanatical:
 This compact cleaning device delivers **15,000Pa** of suction power, making it ideal for crumbs, dust, and tight corners. It’s available on [Amazon](https://www.amazon.com/gp/product/B0C9HPLTX5/) for **$57.99** (a solid deal, though not its lowest price).
 
 #### 🍏 Apple iPad (10th Gen) — All-Time Low
-The 11-inch iPad with Apple’s A16 chip is down to **$319.99** in [blue](https://www.amazon.com/dp/B0DZ75TN5F/) and [yellow](https://www.amazon.com/dp/B0DZ751XN6/). Other colors:
-- [Silver](https://www.amazon.com/dp/B0DZ77D5HL/): $327
-- [Pink](https://www.amazon.com/dp/B0DZ7871B8/): $339  
+The 11-inch iPad with Apple’s A16 chip is down to **$319.99** in [blue](https://amzn.to/4422Xb2) and [yellow](https://amzn.to/4jJzFm1). Other colors:
+- [Silver](https://amzn.to/4iveDGP): $327
+- [Pink](https://amzn.to/3Gox42y): $339  
 👉 [**Read our review**](https://www.theverge.com/apple/636335/ipad-2025-11th-generation-review) before you buy!
 
 ---
