@@ -1,0 +1,114 @@
+# .github/workflows/webhook-dispatch.yml
+name: Dispatch Latest Post to Webhook
+
+on:
+  workflow_run:
+    workflows: ["pages-build-deployment"]
+    types:
+      - completed
+
+jobs:
+  notify-webhook:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Wait for Pages to publish
+        run: sleep 120
+
+      - name: Find latest Markdown file
+        id: find_file
+        run: |
+          FILES=$(git log -1 --name-only --pretty=format: | grep '\.md$' || true)
+          if [ -n "$FILES" ]; then
+            FILE=$(echo "$FILES" | head -n1)
+          else
+            FILE=$(find _posts -type f -name '*.md' | sort | tail -n1)
+          fi
+          echo "file=$FILE" >> $GITHUB_OUTPUT
+
+      - name: Parse front-matter and build payload
+        id: payload
+        env:
+          SITE_URL: https://blog.lynxo.in
+          WEBHOOK_URL: ${{ secrets.MY_WEBHOOK_URL }}
+        run: |
+          F="${{ steps.find_file.outputs.file }}"
+          FM=$(sed -n '/^---$/,/^---$/p' "$F" | sed '1d;$d')
+
+          # title
+          TITLE=$(echo "$FM" | awk -F": " '/^title: /{print substr($0, index($0,$2))}' \
+                   | sed "s/^'//;s/'$//")
+
+          # description (excerpt until toc:)
+          DESCRIPTION=$(echo "$FM" | awk '
+            /^excerpt:/ { sub(/^excerpt:[[:space:]]*/,""); desc=$0; next }
+            /^[[:space:]]+/ && desc!="" { line=$0; sub(/^[[:space:]]*/,"",line); desc=desc " " line; next }
+            /^toc:/ { exit } END { print desc }
+          ' | sed "s/^'//;s/'$//;s/[[:space:]]\{2,\}/ /g")
+
+          # categories & tags
+          CATS=(); TAGS=(); mode=""
+          while IFS= read -r line; do
+            [[ $line =~ ^categories: ]] && { mode="cat"; continue; }
+            [[ $line =~ ^tags: ]]       && { mode="tag"; continue; }
+            [[ $line =~ ^[[:alnum:]] ]] && { mode=""; }
+            if [[ $mode == "cat" && $line =~ ^[[:space:]]*-\ (.+) ]]; then
+              CATS+=("${BASH_REMATCH[1]}")
+            fi
+            if [[ $mode == "tag" && $line =~ ^[[:space:]]*-\ (.+) ]]; then
+              TAGS+=("${BASH_REMATCH[1]}")
+            fi
+          done <<< "$FM"
+
+          # hashtags
+          HASHTAGS=$(printf "#%s " "${TAGS[@]}" | sed 's/ $//')
+
+          # image path
+          TEASER=$(echo "$FM" | awk '/^  teaser: /{print $2}' | sed 's#^/##')
+          IMAGE_PATH="${SITE_URL}/${TEASER}"
+
+          # slug & link
+          BASENAME=$(basename "$F")
+          POST_SLUG=$(echo "$BASENAME" \
+            | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//' \
+            | sed 's/\.md$//')
+          CAT_SLUG=$(echo "${CATS[0]}" | tr '[:upper:]' '[:lower:]')
+          POST_LINK="${SITE_URL}/${CAT_SLUG}/${POST_SLUG}"
+
+          # assemble JSON
+          PAYLOAD=$(jq -n \
+            --arg site_url "$SITE_URL" \
+            --arg title "$TITLE" \
+            --arg description "$DESCRIPTION" \
+            --arg post_slug "$POST_SLUG" \
+            --arg image_path "$IMAGE_PATH" \
+            --argjson tags "$(printf '%s\n' "${TAGS[@]}" | jq -R . | jq -s .)" \
+            --arg hashtags "$HASHTAGS" \
+            --argjson categories "$(printf '%s\n' "${CATS[@]}" | jq -R . | jq -s .)" \
+            --arg post_link "$POST_LINK" \
+            --arg author "Rajan Sandha" \
+            '{
+              site_url:      $site_url,
+              title:         $title,
+              description:   $description,
+              post_slug:     $post_slug,
+              image_path:    $image_path,
+              tags:          $tags,
+              hashtags:      $hashtags,
+              categories:    $categories,
+              post_link:     $post_link,
+              author:        $author
+            }'
+          )
+
+          # send to webhook
+          curl -X POST \
+               -H "Content-Type: application/json" \
+               -d "$PAYLOAD" \
+               "$WEBHOOK_URL"
