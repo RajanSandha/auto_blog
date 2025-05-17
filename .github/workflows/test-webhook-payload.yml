@@ -1,7 +1,6 @@
 # .github/workflows/test-webhook-payload.yml
-name: "Test: Dispatch Latest Post to Webhook (Manual)"
+name: "Test: Dispatch Latest Post to Webhook (Manual with Debug)"
 
-# 1. Manual trigger for testing only
 on:
   workflow_dispatch:
 
@@ -10,41 +9,51 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 2. Checkout your repo
-      - name: "Step 1: Checkout repository"
+      - name: "Step 1: Checkout repository (full history)"
         uses: actions/checkout@v4
         with:
-          fetch-depth: 2
+          fetch-depth: 0
+
       - name: "Debug: List repo files"
         run: |
           echo "🔍 Repo root contents:"
           ls -R .
 
-      # 3. Get the last committed Markdown file
-      - name: "Step 2: Find last committed .md file"
+      - name: "Step 2: Find last committed .md (with fallback)"
         id: find_file
         run: |
-          FILE=$(git log -1 --name-only --pretty=format: | grep '\.md$' | head -n1)
-          echo "🔍 Detected file: $FILE"
+          FILES=$(git log -1 --name-only --pretty=format: | grep '\.md$' || true)
+          if [ -n "$FILES" ]; then
+            FILE=$(echo "$FILES" | head -n1)
+            echo "✔️ Found in last commit: $FILE"
+          else
+            FILE=$(find _posts -type f -name '*.md' | sort | tail -n1)
+            echo "⚠️ No .md in last commit, falling back to newest in _posts/: $FILE"
+          fi
           echo "file=$FILE" >> $GITHUB_OUTPUT
 
-      # 4. Dump its front-matter for inspection
       - name: "Step 3: Show raw front-matter"
         run: |
           F="${{ steps.find_file.outputs.file }}"
+          if [ -z "$F" ]; then
+            echo "❌ ERROR: no file to read!"
+            exit 1
+          fi
           echo "📄 Reading front-matter from: $F"
-          sed -n '/^---$/,/^---$/p' "$F"
+          sed -n '/^---$/,/^---$/p' "$F" || true
 
-      # 5. Extract fields with echo debugging
       - name: "Step 4: Parse front-matter fields"
         id: parse
         run: |
           F="${{ steps.find_file.outputs.file }}"
           FM=$(sed -n '/^---$/,/^---$/p' "$F" | sed '1d;$d')
-          echo "---\n$FM\n---"
+          echo "----- RAW FRONT-MATTER -----"
+          echo "$FM"
+          echo "----------------------------"
 
-          # Helpers
-          get_field() { echo "$FM" | awk -F": " "/^$1: /{print substr(\$0, index(\$0,\$2))}"; }
+          get_field() {
+            echo "$FM" | awk -F": " "/^$1: /{print substr(\$0, index(\$0,\$2))}"
+          }
           extract_list(){
             echo "$FM" \
               | sed -n "/^$1:/,/^[^[:space:]]/p" \
@@ -54,30 +63,33 @@ jobs:
           }
 
           TITLE=$(get_field title | sed "s/^'//;s/'$//")
-          echo "🔹 title: $TITLE"
+          echo "🔹 title:        $TITLE"
+
           DESCRIPTION=$(get_field excerpt | sed "s/^'//;s/'$//")
-          echo "🔹 description: $DESCRIPTION"
+          echo "🔹 description:  $DESCRIPTION"
 
           mapfile -t CATS < <(extract_list categories)
-          echo "🔹 categories: ${CATS[*]}"
+          echo "🔹 categories:   ${CATS[*]}"
+
           mapfile -t TAGS < <(extract_list tags)
-          echo "🔹 tags: ${TAGS[*]}"
+          echo "🔹 tags:         ${TAGS[*]}"
 
           HASHTAGS=$(printf "#%s " "${TAGS[@]}" | sed 's/ $//')
-          echo "🔹 hashtags: $HASHTAGS"
+          echo "🔹 hashtags:     $HASHTAGS"
 
           TEASER=$(echo "$FM" | awk '/^  teaser: /{print $2}' | sed 's#^/##')
           IMAGE_PATH="https://blog.lynxo.in/${TEASER}"
-          echo "🔹 image_path: $IMAGE_PATH"
+          echo "🔹 image_path:   $IMAGE_PATH"
 
           SLUG="${F%.md}"
-          echo "🔹 post_slug: $SLUG"
+          echo "🔹 post_slug:    $SLUG"
 
           CAT_SLUG=$(echo "${CATS[0]}" | tr '[:upper:]' '[:lower:]')
           POST_LINK="https://blog.lynxo.in/${CAT_SLUG}/${SLUG}"
           POST_LINK=$(echo "$POST_LINK" | tr '[:upper:]' '[:lower:]')
-          echo "🔹 post_link: $POST_LINK"
+          echo "🔹 post_link:    $POST_LINK"
 
+          # expose to later steps
           echo "title=$TITLE" >> $GITHUB_OUTPUT
           echo "description=$DESCRIPTION" >> $GITHUB_OUTPUT
           echo "categories=${CATS[*]}" >> $GITHUB_OUTPUT
@@ -87,7 +99,6 @@ jobs:
           echo "post_slug=$SLUG" >> $GITHUB_OUTPUT
           echo "post_link=$POST_LINK" >> $GITHUB_OUTPUT
 
-      # 6. Assemble the full JSON payload and print it
       - name: "Step 5: Build and echo JSON payload"
         id: payload
         run: |
@@ -120,7 +131,6 @@ jobs:
           echo "$PAYLOAD"
           echo "payload=$PAYLOAD" >> $GITHUB_OUTPUT
 
-      # 7. (Optional) Send it—comment out until you're ready
       - name: "Step 6: POST to webhook (disabled)"
         if: false
         run: |
