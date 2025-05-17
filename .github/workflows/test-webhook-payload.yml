@@ -11,17 +11,17 @@ jobs:
 
     steps:
       # 2. Checkout your repo
-      - name: Step 1: Checkout repository
+      - name: "Step 1: Checkout repository"
         uses: actions/checkout@v4
         with:
           fetch-depth: 2
-      - name: Debug: List repo files
+      - name: "Debug: List repo files"
         run: |
           echo "🔍 Repo root contents:"
           ls -R .
 
       # 3. Get the last committed Markdown file
-      - name: Step 2: Find last committed .md file
+      - name: "Step 2: Find last committed .md file"
         id: find_file
         run: |
           FILE=$(git log -1 --name-only --pretty=format: | grep '\.md$' | head -n1)
@@ -29,14 +29,14 @@ jobs:
           echo "file=$FILE" >> $GITHUB_OUTPUT
 
       # 4. Dump its front-matter for inspection
-      - name: Step 3: Show raw front-matter
+      - name: "Step 3: Show raw front-matter"
         run: |
           F="${{ steps.find_file.outputs.file }}"
           echo "📄 Reading front-matter from: $F"
           sed -n '/^---$/,/^---$/p' "$F"
 
       # 5. Extract fields with echo debugging
-      - name: Step 4: Parse front-matter fields
+      - name: "Step 4: Parse front-matter fields"
         id: parse
         run: |
           F="${{ steps.find_file.outputs.file }}"
@@ -88,7 +88,7 @@ jobs:
           echo "post_link=$POST_LINK" >> $GITHUB_OUTPUT
 
       # 6. Assemble the full JSON payload and print it
-      - name: Step 5: Build and echo JSON payload
+      - name: "Step 5: Build and echo JSON payload"
         id: payload
         run: |
           echo "💡 Assembling JSON payload..."
@@ -121,7 +121,7 @@ jobs:
           echo "payload=$PAYLOAD" >> $GITHUB_OUTPUT
 
       # 7. (Optional) Send it—comment out until you're ready
-      - name: Step 6: POST to webhook (disabled)
+      - name: "Step 6: POST to webhook (disabled)"
         if: false
         run: |
           echo "Would send to ${{ secrets.MY_WEBHOOK_URL }}:"
