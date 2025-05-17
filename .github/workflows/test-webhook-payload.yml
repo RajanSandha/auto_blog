@@ -42,62 +42,79 @@ jobs:
           echo "📄 Reading front-matter from: $F"
           sed -n '/^---$/,/^---$/p' "$F" || true
 
-      - name: "Step 4: Parse front-matter fields"
+      - name: "Step 4: Parse front-matter fields (improved)"
         id: parse
         run: |
           F="${{ steps.find_file.outputs.file }}"
           FM=$(sed -n '/^---$/,/^---$/p' "$F" | sed '1d;$d')
+
           echo "----- RAW FRONT-MATTER -----"
           echo "$FM"
           echo "----------------------------"
 
-          get_field() {
-            echo "$FM" | awk -F": " "/^$1: /{print substr(\$0, index(\$0,\$2))}"
-          }
-          extract_list(){
-            echo "$FM" \
-              | sed -n "/^$1:/,/^[^[:space:]]/p" \
-              | tail -n +2 \
-              | grep '^[[:space:]]*-' \
-              | sed 's/^[[:space:]]*-\s*//'
-          }
+          # 1) title
+          TITLE=$(echo "$FM" | awk -F": " '/^title: /{print substr($0, index($0,$2))}' \
+                  | sed "s/^'//;s/'$//")
+          echo "🔹 title:       $TITLE"
 
-          TITLE=$(get_field title | sed "s/^'//;s/'$//")
-          echo "🔹 title:        $TITLE"
+          # 2) description (multi-line between excerpt: and toc:)
+          DESCRIPTION=$(echo "$FM" \
+            | sed -n '/^excerpt:/,/^toc:/{ 
+                /^excerpt:/d
+                /^toc:/d
+                s/^[[:space:]]*//
+                p
+              }' \
+            | tr '\n' ' ' \
+            | sed 's/  */ /g' \
+            | sed "s/^'//;s/'$//")
+          echo "🔹 description: $DESCRIPTION"
 
-          DESCRIPTION=$(get_field excerpt | sed "s/^'//;s/'$//")
-          echo "🔹 description:  $DESCRIPTION"
+          # 3) categories array
+          mapfile -t CATS < <(echo "$FM" \
+            | sed -n '/^categories:/,/^[^[:space:]]/p' \
+            | tail -n +2 \
+            | sed -n 's/^[[:space:]]*-\s*//p')
+          echo "🔹 categories:  ${CATS[*]}"
 
-          mapfile -t CATS < <(extract_list categories)
-          echo "🔹 categories:   ${CATS[*]}"
+          # 4) tags array
+          mapfile -t TAGS < <(echo "$FM" \
+            | sed -n '/^tags:/,/^[^[:space:]]/p' \
+            | tail -n +2 \
+            | sed -n 's/^[[:space:]]*-\s*//p')
+          echo "🔹 tags:        ${TAGS[*]}"
 
-          mapfile -t TAGS < <(extract_list tags)
-          echo "🔹 tags:         ${TAGS[*]}"
-
+          # 5) hashtags
           HASHTAGS=$(printf "#%s " "${TAGS[@]}" | sed 's/ $//')
-          echo "🔹 hashtags:     $HASHTAGS"
+          echo "🔹 hashtags:    $HASHTAGS"
 
+          # 6) teaser → image_path
           TEASER=$(echo "$FM" | awk '/^  teaser: /{print $2}' | sed 's#^/##')
           IMAGE_PATH="https://blog.lynxo.in/${TEASER}"
-          echo "🔹 image_path:   $IMAGE_PATH"
+          echo "🔹 image_path:  $IMAGE_PATH"
 
-          SLUG="${F%.md}"
-          echo "🔹 post_slug:    $SLUG"
+          # 7) slug: strip path, date prefix & .md
+          BASENAME=$(basename "$F")
+          POST_SLUG=$(echo "$BASENAME" \
+            | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//' \
+            | sed 's/\.md$//')
+          echo "🔹 post_slug:   $POST_SLUG"
 
+          # 8) post_link: site/category/slug
           CAT_SLUG=$(echo "${CATS[0]}" | tr '[:upper:]' '[:lower:]')
-          POST_LINK="https://blog.lynxo.in/${CAT_SLUG}/${SLUG}"
-          POST_LINK=$(echo "$POST_LINK" | tr '[:upper:]' '[:lower:]')
-          echo "🔹 post_link:    $POST_LINK"
+          POST_LINK="https://blog.lynxo.in/${CAT_SLUG}/${POST_SLUG}"
+          echo "🔹 post_link:   $POST_LINK"
 
-          # expose to later steps
-          echo "title=$TITLE" >> $GITHUB_OUTPUT
+          # Export for next steps
+          echo "title=$TITLE"       >> $GITHUB_OUTPUT
           echo "description=$DESCRIPTION" >> $GITHUB_OUTPUT
-          echo "categories=${CATS[*]}" >> $GITHUB_OUTPUT
-          echo "tags=${TAGS[*]}" >> $GITHUB_OUTPUT
-          echo "hashtags=$HASHTAGS" >> $GITHUB_OUTPUT
-          echo "image_path=$IMAGE_PATH" >> $GITHUB_OUTPUT
-          echo "post_slug=$SLUG" >> $GITHUB_OUTPUT
-          echo "post_link=$POST_LINK" >> $GITHUB_OUTPUT
+          echo "categories=${CATS[*]}"   >> $GITHUB_OUTPUT
+          echo "tags=${TAGS[*]}"         >> $GITHUB_OUTPUT
+          echo "hashtags=$HASHTAGS"      >> $GITHUB_OUTPUT
+          echo "image_path=$IMAGE_PATH"  >> $GITHUB_OUTPUT
+          echo "post_slug=$POST_SLUG"    >> $GITHUB_OUTPUT
+          echo "post_link=$POST_LINK"    >> $GITHUB_OUTPUT
+
 
       - name: "Step 5: Build and echo JSON payload"
         id: payload
