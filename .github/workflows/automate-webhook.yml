@@ -85,6 +85,7 @@ jobs:
             | sed 's/\.md$//')
           CAT_SLUG=$(echo "${CATS[0]}" | tr '[:upper:]' '[:lower:]')
           POST_LINK="${SITE_URL}/${CAT_SLUG}/${POST_SLUG}"
+          ENCODED_POST_LINK=$(printf "%s" "$POST_LINK" | jq -sRr @uri)
 
           # assemble JSON
           PAYLOAD=$(jq -n \
@@ -96,7 +97,7 @@ jobs:
             --argjson tags "$(printf '%s\n' "${TAGS[@]}" | jq -R . | jq -s .)" \
             --arg hashtags "$HASHTAGS" \
             --argjson categories "$(printf '%s\n' "${CATS[@]}" | jq -R . | jq -s .)" \
-            --arg post_link "$POST_LINK" \
+            --arg post_link "$ENCODED_POST_LINK" \
             --arg author "Rajan Sandha" \
             '{
               site_url:      $site_url,
