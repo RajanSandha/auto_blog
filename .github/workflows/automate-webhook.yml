@@ -118,3 +118,69 @@ jobs:
                -H "Content-Type: application/json" \
                -d "$PAYLOAD" \
                "$WEBHOOK_URL"
+
+      - name: Extract source URL and update post_history.json
+        env:
+          AUTOBLOG_TOKEN: ${{ secrets.AUTOBLOG_TOKEN }}
+          AUTOBLOG_REPO: "RajanSandha/auto_blog_script"
+          AUTOBLOG_BRANCH: "main"
+        run: |
+          # Extract source URL from the post file
+          F="${{ steps.find_file.outputs.file }}"
+          SOURCE_URL=$(sed -n '/^Source: \[/,/\)$/p' "$F" | grep -o 'https://[^)]*')
+          
+          if [ -z "$SOURCE_URL" ]; then
+            echo "No source URL found in the post, skipping post_history update"
+            exit 0
+          fi
+          
+          echo "Found source URL: $SOURCE_URL"
+          
+          # Current date in YYYY-MM-DD format
+          CURRENT_DATE=$(date +%Y-%m-%d)
+          
+          # Clone the auto_blog_script repository
+          echo "Cloning auto_blog_script repository..."
+          git clone https://${AUTOBLOG_TOKEN}@github.com/${AUTOBLOG_REPO}.git temp_autoblog
+          cd temp_autoblog
+          
+          # Configure git
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          
+          # Check if post_history.json exists
+          if [ ! -f "data/post_history.json" ]; then
+            echo "post_history.json not found, creating new file"
+            mkdir -p data
+            echo "{}" > data/post_history.json
+          fi
+          
+          # Add the entry to post_history.json
+          # Use jq to avoid formatting issues and duplicate entries
+          if grep -q "$SOURCE_URL" data/post_history.json; then
+            echo "URL already exists in post_history.json, skipping"
+          else
+            # Escape any special characters in the URL
+            ESCAPED_URL=$(echo "$SOURCE_URL" | sed 's/\//\\\//g')
+            
+            # Add the new entry to post_history.json, preserving formatting
+            TMP_FILE=$(mktemp)
+            cat data/post_history.json | jq '. + {"'"$SOURCE_URL"'": "'"$CURRENT_DATE"'"}' > "$TMP_FILE"
+            mv "$TMP_FILE" data/post_history.json
+            
+            echo "Added entry to post_history.json"
+            
+            # Commit and push changes
+            git add data/post_history.json
+            git commit -m "Update post_history.json with new processed URL [skip ci]"
+            
+            # Pull before pushing to avoid conflicts
+            git pull --rebase origin ${AUTOBLOG_BRANCH}
+            git push origin ${AUTOBLOG_BRANCH}
+            
+            echo "Changes pushed to auto_blog_script repository"
+          fi
+          
+          # Clean up
+          cd ..
+          rm -rf temp_autoblog
