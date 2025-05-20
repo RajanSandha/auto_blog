@@ -33,6 +33,35 @@
          viewport height - nav height - masthead x-padding
       */
       max-height: calc(100vh - #{$nav-height} - 2em);
+      
+      /* Webkit browsers (Chrome, Safari, newer versions of Opera) */
+      &::-webkit-scrollbar {
+        width: 3px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: rgba(128, 128, 128, 0.3);
+        border-radius: 4px;
+        
+        &:hover {
+          background-color: rgba(128, 128, 128, 0.5);
+        }
+      }
+      
+      /* Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: rgba(128, 128, 128, 0.3) transparent;
+      
+      /* Hide scrollbar while allowing scrolling */
+      &:hover {
+        &::-webkit-scrollbar-thumb {
+          background-color: rgba(128, 128, 128, 0.5);
+        }
+      }
     }
   }
 
