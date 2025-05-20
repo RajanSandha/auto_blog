@@ -1,0 +1,20 @@
+ /* Ad section responsive styles */
+
+// Hide sidebar ad on mobile
+@media screen and (max-width: 768px) {
+    .sidebar {
+      .sidebar-ad-section {
+        display: none;
+      }
+    }
+  }
+  
+// Show/hide pagination ad section based on screen size
+.pagination-ad-section {
+  display: none; // Hidden by default on larger screens
+  
+  @media screen and (max-width: 768px) {
+    display: block; // Show only on mobile
+    margin-bottom: 2em;
+  }
+}

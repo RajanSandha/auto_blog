@@ -154,7 +154,10 @@ author:
       url: "https://github.com/RajanSandha"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/_sandha_"
+      url: "https://instagram.com/lynxo.in"
+    - label: "Telegram"
+      icon: "fab fa-fw fa-telegram"
+      url: "https://t.me/lynxoworld"
 
 # Site Footer
 footer:
@@ -174,7 +177,7 @@ footer:
       icon: "fab fa-fw fa-bitbucket"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/_sandha_"
+      url: "https://instagram.com/lynxo.in"
 
 
 # Reading Files
