@@ -179,6 +179,9 @@ footer:
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/lynxo.in"
 
+# Custom Scripts
+after_footer_scripts:
+  - /assets/js/ad-responsive.js
 
 # Reading Files
 include:
