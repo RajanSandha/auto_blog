@@ -67,4 +67,4 @@ This glimpse into Amazon's Project Kuiper shows the company is serious about its
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/we-finally-know-a-little-more-about-amazons-super-secret-satellites/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/we-finally-know-a-little-more-about-amazons-super-secret-satellites/)

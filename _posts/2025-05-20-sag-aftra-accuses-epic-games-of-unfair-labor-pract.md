@@ -78,4 +78,4 @@ The clash between SAG-AFTRA and Epic Games over the AI Darth Vader in *Fortnite*
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/sag-aftra-says-fortnites-ai-darth-vader-voice-violates-fair-labor-practices-202009163.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/sag-aftra-says-fortnites-ai-darth-vader-voice-violates-fair-labor-practices-202009163.html?src=rss)

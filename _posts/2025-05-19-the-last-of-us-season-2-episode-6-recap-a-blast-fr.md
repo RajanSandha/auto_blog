@@ -68,4 +68,4 @@ Episode 6 of *The Last of Us* season 2 is a bittersweet journey into the past, o
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/05/hbos-the-last-of-us-s2e6-recap-look-whos-back/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/05/hbos-the-last-of-us-s2e6-recap-look-whos-back/)

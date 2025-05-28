@@ -70,4 +70,4 @@ These are complex questions that require careful consideration. But one thing is
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/04/a-chinese-born-crypto-tycoon-of-all-people-changed-the-way-i-think-of-space/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/04/a-chinese-born-crypto-tycoon-of-all-people-changed-the-way-i-think-of-space/)

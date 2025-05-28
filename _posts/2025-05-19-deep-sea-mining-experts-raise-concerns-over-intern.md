@@ -92,4 +92,4 @@ Ultimately, the future of deep-sea mining will depend on our ability to balance 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/experts-alarmed-over-trumps-promotion-of-deep-sea-mining-in-international-waters/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/05/experts-alarmed-over-trumps-promotion-of-deep-sea-mining-in-international-waters/)

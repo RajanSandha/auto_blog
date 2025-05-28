@@ -66,4 +66,4 @@ Judge Chhabria's skepticism towards Meta's fair use claim underscores the comple
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/tech-policy/2025/05/judge-on-metas-ai-training-i-just-dont-understand-how-that-can-be-fair-use/)
+Source: [Ars Technica ](https://arstechnica.com/tech-policy/2025/05/judge-on-metas-ai-training-i-just-dont-understand-how-that-can-be-fair-use/)

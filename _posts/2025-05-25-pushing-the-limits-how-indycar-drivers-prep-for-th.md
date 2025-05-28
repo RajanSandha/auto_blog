@@ -85,4 +85,4 @@ Whether you're a seasoned motorsport fan or new to the world of racing, the Indy
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/features/2025/05/how-to-try-to-win-the-indianapolis-500/)
+Source: [Ars Technica ](https://arstechnica.com/features/2025/05/how-to-try-to-win-the-indianapolis-500/)

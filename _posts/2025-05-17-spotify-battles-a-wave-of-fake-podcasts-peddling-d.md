@@ -74,4 +74,4 @@ In conclusion, the discovery of hundreds of fake podcasts advertising prescripti
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/tech-policy/2025/05/spotify-plays-whack-a-mole-with-fake-podcasts-selling-drugs-scamming-users/)
+Source: [Ars Technica ](https://arstechnica.com/tech-policy/2025/05/spotify-plays-whack-a-mole-with-fake-podcasts-selling-drugs-scamming-users/)

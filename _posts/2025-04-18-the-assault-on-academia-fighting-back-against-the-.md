@@ -63,4 +63,4 @@ The time for passive resistance is over. It's time for universities, faculty, st
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/04/resist-eggheads-universities-are-not-as-weak-as-they-have-chosen-to-be/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/04/resist-eggheads-universities-are-not-as-weak-as-they-have-chosen-to-be/)

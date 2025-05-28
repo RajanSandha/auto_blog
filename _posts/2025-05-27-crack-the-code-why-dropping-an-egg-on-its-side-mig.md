@@ -70,4 +70,4 @@ Now, go forth and drop… horizontally!
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/the-key-to-a-successful-egg-drop-experiment-drop-it-on-its-side/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/05/the-key-to-a-successful-egg-drop-experiment-drop-it-on-its-side/)

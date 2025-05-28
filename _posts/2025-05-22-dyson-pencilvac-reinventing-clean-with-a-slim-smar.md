@@ -87,4 +87,4 @@ The Dyson PencilVac represents a bold and innovative approach to vacuum design. 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/home/the-dyson-pencilvac-is-the-most-stick-like-stick-vacuum-ever-020109491.html?src=rss)
+Source: [Engadget](https://www.engadget.com/home/the-dyson-pencilvac-is-the-most-stick-like-stick-vacuum-ever-020109491.html?src=rss)

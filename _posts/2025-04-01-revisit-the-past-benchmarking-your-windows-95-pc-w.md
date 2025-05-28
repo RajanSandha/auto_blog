@@ -62,4 +62,4 @@ CrystalMark Retro is a significant addition to the retrocomputing community's to
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gadgets/2025/03/crystalmark-retro-benchmark-extends-support-all-the-way-back-to-windows-95/)
+Source: [Ars Technica ](https://arstechnica.com/gadgets/2025/03/crystalmark-retro-benchmark-extends-support-all-the-way-back-to-windows-95/)

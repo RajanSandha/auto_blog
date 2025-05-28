@@ -69,4 +69,4 @@ Episode 6 of *The Last of Us* Season 2 is a bittersweet experience. It's a celeb
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/05/hbos-the-last-of-us-s2e6-recap-look-whos-back/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/05/hbos-the-last-of-us-s2e6-recap-look-whos-back/)

@@ -85,4 +85,4 @@ It remains to be seen whether the Texas bill will become law. Regardless of the 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/social-media/texas-is-getting-ready-to-ban-social-media-for-anyone-under-18-180202219.html?src=rss)
+Source: [Engadget](https://www.engadget.com/social-media/texas-is-getting-ready-to-ban-social-media-for-anyone-under-18-180202219.html?src=rss)

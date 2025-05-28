@@ -55,4 +55,4 @@ The $13.7 billion contract award marks a pivotal moment for the US space industr
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/04/with-new-contracts-spacex-will-become-the-us-militarys-top-launch-provider/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/04/with-new-contracts-spacex-will-become-the-us-militarys-top-launch-provider/)

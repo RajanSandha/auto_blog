@@ -59,4 +59,4 @@ Meta's Llama 4 release serves as a valuable case study in the challenges of bala
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/ai/2025/04/metas-surprise-llama-4-drop-exposes-the-gap-between-ai-ambition-and-reality/)
+Source: [Ars Technica ](https://arstechnica.com/ai/2025/04/metas-surprise-llama-4-drop-exposes-the-gap-between-ai-ambition-and-reality/)

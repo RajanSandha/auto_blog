@@ -55,4 +55,4 @@ The €150 million fine imposed on Apple by France's competition regulator is a 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/tech-policy/2025/03/france-fines-apple-e150m-for-excessive-pop-ups-that-let-users-reject-tracking/)
+Source: [Ars Technica ](https://arstechnica.com/tech-policy/2025/03/france-fines-apple-e150m-for-excessive-pop-ups-that-let-users-reject-tracking/)

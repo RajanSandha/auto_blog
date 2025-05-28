@@ -70,4 +70,4 @@ Let's not underestimate the power of the unsung heroes, even if they're covered 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/penguin-poop-may-help-preserve-antarctic-climate/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/05/penguin-poop-may-help-preserve-antarctic-climate/)

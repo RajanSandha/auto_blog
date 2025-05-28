@@ -54,4 +54,4 @@ The coming months and years will be crucial in determining the success of this a
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/tech-policy/2025/03/elon-musks-x-has-a-new-owner-elon-musks-xai/)
+Source: [Ars Technica ](https://arstechnica.com/tech-policy/2025/03/elon-musks-x-has-a-new-owner-elon-musks-xai/)

@@ -68,4 +68,4 @@ While the details surrounding gameless game keys are still emerging, their poten
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gaming/2025/04/nintendo-switch-2s-gameless-game-key-cards-are-going-to-be-very-common/)
+Source: [Ars Technica ](https://arstechnica.com/gaming/2025/04/nintendo-switch-2s-gameless-game-key-cards-are-going-to-be-very-common/)

@@ -63,4 +63,4 @@ The latest episode of *The Last of Us* delivers a compelling and thought-provoki
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/05/the-last-of-us-packs-new-characters-and-new-revelations-into-its-latest-episode/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/05/the-last-of-us-packs-new-characters-and-new-revelations-into-its-latest-episode/)

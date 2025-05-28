@@ -71,4 +71,4 @@ SpaceX's Starship program is more than just rockets and launches; it's about ins
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/science/space/how-to-watch-spacexs-ninth-starship-flight-test-on-tuesday-213424312.html?src=rss)
+Source: [Engadget](https://www.engadget.com/science/space/how-to-watch-spacexs-ninth-starship-flight-test-on-tuesday-213424312.html?src=rss)

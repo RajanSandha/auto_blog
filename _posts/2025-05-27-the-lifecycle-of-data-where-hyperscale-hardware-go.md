@@ -84,4 +84,4 @@ So, the next time you think about the cloud, the internet, or the vast ocean of 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/information-technology/2025/05/where-hyperscale-hardware-goes-to-retire-ars-visits-a-very-big-itad-site/)
+Source: [Ars Technica ](https://arstechnica.com/information-technology/2025/05/where-hyperscale-hardware-goes-to-retire-ars-visits-a-very-big-itad-site/)

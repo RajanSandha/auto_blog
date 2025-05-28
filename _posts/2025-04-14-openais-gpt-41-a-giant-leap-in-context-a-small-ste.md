@@ -59,4 +59,4 @@ OpenAI's GPT-4.1 models represent a significant step forward in the evolution of
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/ai/2025/04/when-is-4-1-greater-than-4-5-when-its-openais-newest-model/)
+Source: [Ars Technica ](https://arstechnica.com/ai/2025/04/when-is-4-1-greater-than-4-5-when-its-openais-newest-model/)

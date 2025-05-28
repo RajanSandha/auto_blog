@@ -74,4 +74,4 @@ The temporary delay in the launch of Gilmour Space's Eris rocket, caused by the 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/the-top-fell-off-australias-first-orbital-class-rocket-delaying-its-launch/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/the-top-fell-off-australias-first-orbital-class-rocket-delaying-its-launch/)

@@ -80,4 +80,4 @@ This situation serves as a reminder that technology is not just about bits and b
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/information-technology/2025/05/vmware-cloud-partners-demand-firm-regulatory-action-on-broadcom/)
+Source: [Ars Technica ](https://arstechnica.com/information-technology/2025/05/vmware-cloud-partners-demand-firm-regulatory-action-on-broadcom/)

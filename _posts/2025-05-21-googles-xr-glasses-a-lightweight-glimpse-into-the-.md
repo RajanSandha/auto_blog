@@ -70,4 +70,4 @@ Google's prototype XR glasses represent a promising step towards a future where 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/ar-vr/google-xr-glasses-hands-on-lightweight-but-with-a-limited-field-of-view-213940554.html?src=rss)
+Source: [Engadget](https://www.engadget.com/ar-vr/google-xr-glasses-hands-on-lightweight-but-with-a-limited-field-of-view-213940554.html?src=rss)

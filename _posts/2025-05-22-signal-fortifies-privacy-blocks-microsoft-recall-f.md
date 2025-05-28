@@ -71,4 +71,4 @@ By taking a stand against intrusive data collection practices, Signal is setting
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/computing/signal-will-block-microsoft-recall-from-snooping-on-your-texts-225853193.html?src=rss)
+Source: [Engadget](https://www.engadget.com/computing/signal-will-block-microsoft-recall-from-snooping-on-your-texts-225853193.html?src=rss)

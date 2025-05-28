@@ -75,4 +75,4 @@ The Falcon 9 explosion of September 1, 2016, was a pivotal moment for SpaceX. Wh
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/spacex-pushed-sniper-theory-with-the-feds-far-more-than-is-publicly-known/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/spacex-pushed-sniper-theory-with-the-feds-far-more-than-is-publicly-known/)

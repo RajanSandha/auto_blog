@@ -54,4 +54,4 @@ The future of AI art is undoubtedly bright, and with Midjourney V7 leading the c
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/ai/2025/04/midjourney-introduces-first-new-image-generation-model-in-over-a-year/)
+Source: [Ars Technica ](https://arstechnica.com/ai/2025/04/midjourney-introduces-first-new-image-generation-model-in-over-a-year/)

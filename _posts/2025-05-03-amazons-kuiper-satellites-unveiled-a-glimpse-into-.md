@@ -64,4 +64,4 @@ While the specifics of Amazon's Kuiper constellation remain partially under wrap
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/we-finally-know-a-little-more-about-amazons-super-secret-satellites/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/we-finally-know-a-little-more-about-amazons-super-secret-satellites/)

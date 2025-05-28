@@ -84,4 +84,4 @@ The opportunities for 3D printing in healthcare are vast. By enabling personaliz
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/how-3d-printing-is-personalizing-health-care/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/05/how-3d-printing-is-personalizing-health-care/)

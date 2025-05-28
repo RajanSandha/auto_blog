@@ -82,4 +82,4 @@ The March 2024 update and the rise of zero-click searches represent a significan
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/google/2025/05/zero-click-searches-googles-ai-tools-are-the-culmination-of-its-hubris/)
+Source: [Ars Technica ](https://arstechnica.com/google/2025/05/zero-click-searches-googles-ai-tools-are-the-culmination-of-its-hubris/)

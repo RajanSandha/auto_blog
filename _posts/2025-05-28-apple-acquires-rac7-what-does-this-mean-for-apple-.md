@@ -44,7 +44,7 @@ For years, many have wondered when Apple would fully leverage its resources and 
 
 ### Sneaky Sasquatch: A Quirky Success Story
 
-*Sneaky Sasquatch*, a launch title for Apple Arcade in 2019, has become a fan favorite for its unique gameplay and charming characters. The game puts players in the role of Bigfoot, navigating a forest, disguising themselves as humans, and even learning to drive cars. Its quirky and unconventional nature has made it a standout title on the platform. [Link to Apple Arcade](URL)
+*Sneaky Sasquatch*, a launch title for Apple Arcade in 2019, has become a fan favorite for its unique gameplay and charming characters. The game puts players in the role of Bigfoot, navigating a forest, disguising themselves as humans, and even learning to drive cars. Its quirky and unconventional nature has made it a standout title on the platform.
 
 Engadget's Devindra Hardawar praised *Sneaky Sasquatch* as an example of how Apple Arcade allows developers to "cut loose and get weird," fostering creativity and innovation. The game's continued popularity after five years demonstrates its lasting appeal and its importance to the Apple Arcade ecosystem.
 
@@ -83,4 +83,4 @@ What are your thoughts on Apple's gaming plans? Share your opinions and predicti
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/apple-buys-the-maker-of-sneaky-sasquatch-210305065.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/apple-buys-the-maker-of-sneaky-sasquatch-210305065.html?src=rss)

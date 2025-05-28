@@ -72,4 +72,4 @@ The Slate Truck is undoubtedly one of the most intriguing EVs to emerge in recen
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/cars/2025/04/amazon-backed-startup-wants-to-sell-a-bare-bones-ev-truck-for-20000/)
+Source: [Ars Technica ](https://arstechnica.com/cars/2025/04/amazon-backed-startup-wants-to-sell-a-bare-bones-ev-truck-for-20000/)

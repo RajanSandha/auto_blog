@@ -64,4 +64,4 @@ If you're looking for a post-apocalyptic RPG that offers a unique and engaging e
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gaming/2025/04/dustland-delivery-asks-which-is-worse-gas-prices-or-gangs-of-rotting-mutants/)
+Source: [Ars Technica ](https://arstechnica.com/gaming/2025/04/dustland-delivery-asks-which-is-worse-gas-prices-or-gangs-of-rotting-mutants/)

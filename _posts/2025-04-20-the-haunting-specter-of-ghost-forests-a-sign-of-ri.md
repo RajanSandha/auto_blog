@@ -71,4 +71,4 @@ The ghost forests stand as a haunting reminder of the profound impact of rising 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/04/ghost-forests-are-growing-as-sea-levels-rise/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/04/ghost-forests-are-growing-as-sea-levels-rise/)

@@ -64,4 +64,4 @@ Will the Switch 2 become a surprise productivity tool? Only time will tell, but 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/nintendo/nintendo-switch-2-will-support-regular-usb-mice-in-at-least-one-game-205725720.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/nintendo/nintendo-switch-2-will-support-regular-usb-mice-in-at-least-one-game-205725720.html?src=rss)

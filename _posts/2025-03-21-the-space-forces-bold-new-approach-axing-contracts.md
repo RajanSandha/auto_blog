@@ -58,4 +58,4 @@ The Space Force's actions demonstrate a commitment to a more efficient and accou
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/03/the-ax-has-become-an-important-part-of-the-space-forces-arsenal/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/03/the-ax-has-become-an-important-part-of-the-space-forces-arsenal/)

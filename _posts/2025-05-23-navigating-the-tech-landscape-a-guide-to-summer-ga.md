@@ -127,4 +127,4 @@ Summer Game Fest 2025 is more than just a gaming event; it's a window into the f
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/summer-game-fest-2025-what-to-expect-and-how-to-watch-games-revealed-live-000016769.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/summer-game-fest-2025-what-to-expect-and-how-to-watch-games-revealed-live-000016769.html?src=rss)

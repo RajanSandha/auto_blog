@@ -75,4 +75,4 @@ By fostering a culture of innovation, promoting collaboration, and investing in 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/the-pentagon-seems-to-be-fed-up-with-ulas-rocket-delays/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/the-pentagon-seems-to-be-fed-up-with-ulas-rocket-delays/)

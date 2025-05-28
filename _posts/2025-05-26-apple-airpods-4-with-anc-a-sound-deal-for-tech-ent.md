@@ -80,4 +80,4 @@ No matter which version you choose, the Apple AirPods 4 offer a compelling combi
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/deals/apples-airpods-4-with-anc-drop-to-149-for-memorial-day-161120128.html?src=rss)
+Source: [Engadget](https://www.engadget.com/deals/apples-airpods-4-with-anc-drop-to-149-for-memorial-day-161120128.html?src=rss)

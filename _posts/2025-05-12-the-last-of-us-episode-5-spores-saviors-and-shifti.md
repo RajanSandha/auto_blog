@@ -68,4 +68,4 @@ Episode 5 of *The Last of Us* is a masterclass in suspense, character developmen
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/05/the-last-of-us-episode-5-recap-theres-something-in-the-air/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/05/the-last-of-us-episode-5-recap-theres-something-in-the-air/)

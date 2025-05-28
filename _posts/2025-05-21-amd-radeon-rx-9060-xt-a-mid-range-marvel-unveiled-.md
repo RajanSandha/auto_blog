@@ -64,4 +64,4 @@ The AMD Radeon RX 9060 XT appears to be a promising mid-range GPU that could sha
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/pc/amd-unveils-radeon-rx-9060-xt-at-computex-2025-030021776.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/pc/amd-unveils-radeon-rx-9060-xt-at-computex-2025-030021776.html?src=rss)

@@ -81,4 +81,4 @@ The recent disruptions with the digital AP Psychology exam are a stark reminder 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/culture/2025/05/college-board-keeps-apologizing-for-screwing-up-digital-sat-and-ap-tests/)
+Source: [Ars Technica ](https://arstechnica.com/culture/2025/05/college-board-keeps-apologizing-for-screwing-up-digital-sat-and-ap-tests/)

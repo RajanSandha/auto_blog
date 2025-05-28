@@ -64,4 +64,4 @@ The case of Ryan Mitchell Kramer serves as a cautionary tale about the potential
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/ai/2025/05/man-pleads-guilty-to-using-malicious-ai-software-to-hack-disney-employee/)
+Source: [Ars Technica ](https://arstechnica.com/ai/2025/05/man-pleads-guilty-to-using-malicious-ai-software-to-hack-disney-employee/)

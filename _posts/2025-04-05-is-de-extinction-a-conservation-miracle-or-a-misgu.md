@@ -57,4 +57,4 @@ The current enthusiasm for de-extinction risks diverting crucial resources and a
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/04/editorial-mammoth-de-extinction-is-bad-conservation/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/04/editorial-mammoth-de-extinction-is-bad-conservation/)

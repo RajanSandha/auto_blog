@@ -87,4 +87,4 @@ Let's embrace the power of technology to build a more sustainable and biodiverse
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/how-farmers-can-help-rescue-water-loving-birds/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/05/how-farmers-can-help-rescue-water-loving-birds/)

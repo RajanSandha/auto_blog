@@ -86,4 +86,4 @@ Spotify's integration of audiobook purchases directly into its iOS app represent
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/entertainment/spotify-ios-users-can-now-buy-audiobooks-directly-from-the-app-230304105.html?src=rss)
+Source: [Engadget](https://www.engadget.com/entertainment/spotify-ios-users-can-now-buy-audiobooks-directly-from-the-app-230304105.html?src=rss)

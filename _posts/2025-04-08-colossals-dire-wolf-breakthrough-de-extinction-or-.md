@@ -54,4 +54,4 @@ Colossal's announcement, while exciting, demands a measured response.  While the
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/04/de-extinction-company-announces-that-the-dire-wolf-is-back/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/04/de-extinction-company-announces-that-the-dire-wolf-is-back/)

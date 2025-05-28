@@ -61,4 +61,4 @@ The *Balatro* saga underscores a critical need for YouTube to refine its content
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gaming/2025/04/balatro-yet-again-subject-to-mods-poor-understanding-of-gambling/)
+Source: [Ars Technica ](https://arstechnica.com/gaming/2025/04/balatro-yet-again-subject-to-mods-poor-understanding-of-gambling/)

@@ -83,4 +83,4 @@ In conclusion, the jury's decision to award WhatsApp $167 million in punitive da
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/security/2025/05/jury-orders-nso-to-pay-167-million-for-hacking-whatsapp-users/)
+Source: [Ars Technica ](https://arstechnica.com/security/2025/05/jury-orders-nso-to-pay-167-million-for-hacking-whatsapp-users/)

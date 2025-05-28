@@ -73,4 +73,4 @@ In conclusion, the burgeoning commercial space sector offers the Space Force and
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/space/2025/05/space-force-official-commercial-satellites-can-do-a-lot-more-than-we-thought/)
+Source: [Ars Technica ](https://arstechnica.com/space/2025/05/space-force-official-commercial-satellites-can-do-a-lot-more-than-we-thought/)

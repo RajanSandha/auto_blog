@@ -55,4 +55,4 @@ This situation underscores the interconnectedness of the global economy and the 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/tech-policy/2025/04/after-market-tumult-trump-exempts-smartphones-from-massive-new-tariffs/)
+Source: [Ars Technica ](https://arstechnica.com/tech-policy/2025/04/after-market-tumult-trump-exempts-smartphones-from-massive-new-tariffs/)

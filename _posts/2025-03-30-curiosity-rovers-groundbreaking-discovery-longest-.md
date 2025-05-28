@@ -54,4 +54,4 @@ The discovery of the longest chain carbon molecules on Mars marks a significant 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/03/nasas-curiosity-rover-has-found-the-longest-chain-carbon-molecules-yet-on-mars/)
+Source: [Ars Technica ](https://arstechnica.com/science/2025/03/nasas-curiosity-rover-has-found-the-longest-chain-carbon-molecules-yet-on-mars/)

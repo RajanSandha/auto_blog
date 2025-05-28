@@ -81,9 +81,9 @@ The move to offer free web search is a smart one. It allows more users to see th
 
 ## Conclusion
 
-Anthropic's decision to bring web search to free Claude users and launch the voice mode beta demonstrates its commitment to making powerful AI tools accessible to a wider audience. These updates not only enhance the functionality of Claude but also pave the way for a more integrated and user-friendly AI experience. As AI technology continues to evolve, Anthropic's focus on accessibility and innovation positions it as a key player in shaping the future of **AI assistants**. Explore the new features today and experience the power of Claude. [Learn more about Anthropic and Claude](URL).
+Anthropic's decision to bring web search to free Claude users and launch the voice mode beta demonstrates its commitment to making powerful AI tools accessible to a wider audience. These updates not only enhance the functionality of Claude but also pave the way for a more integrated and user-friendly AI experience. As AI technology continues to evolve, Anthropic's focus on accessibility and innovation positions it as a key player in shaping the future of **AI assistants**. Explore the new features today and experience the power of Claude.
 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/ai/anthropic-brings-web-search-to-free-claude-users-224222689.html?src=rss)
+Source: [Engadget](https://www.engadget.com/ai/anthropic-brings-web-search-to-free-claude-users-224222689.html?src=rss)

@@ -92,4 +92,4 @@ Choosing the right MacBook in 2025 requires careful consideration of your indivi
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/computing/laptops/best-macbook-140032524.html?src=rss)
+Source: [Engadget](https://www.engadget.com/computing/laptops/best-macbook-140032524.html?src=rss)
