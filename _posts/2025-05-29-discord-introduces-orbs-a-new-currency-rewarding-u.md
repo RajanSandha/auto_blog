@@ -43,7 +43,7 @@ According to a recent blog post by Peter Sellis, Discord’s SVP of Product, a s
 
 The introduction of Orbs is a strategic move by Discord to bolster its advertising business. By offering tangible rewards for engaging with ads, Discord aims to make clicking on advertisements more appealing to users. This approach benefits both Discord and its advertisers:
 
-*   **For Discord:** Increased user engagement with ads translates to higher revenue and a more sustainable business model. [Discord Monetization Strategy](URL)
+*   **For Discord:** Increased user engagement with ads translates to higher revenue and a more sustainable business model.
 *   **For Advertisers:** Associating their ads with desirable rewards can improve brand perception and drive conversions.
 
 ## The Implications of Discord's Advertising Push
@@ -86,4 +86,4 @@ What are your thoughts on Discord's new Orbs currency? Share your opinions and p
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gadgets/2025/05/discord-lures-users-to-click-on-ads-by-offering-them-new-orbs-currency/)
+Source: [Ars Technica](https://arstechnica.com/gadgets/2025/05/discord-lures-users-to-click-on-ads-by-offering-them-new-orbs-currency/)

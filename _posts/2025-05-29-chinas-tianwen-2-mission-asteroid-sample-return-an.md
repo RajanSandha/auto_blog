@@ -68,4 +68,4 @@ The Tianwen-2 mission is part of a growing global effort to explore asteroids an
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/china-extends-its-reach-into-the-solar-system-with-launch-of-asteroid-mission/)
+Source: [Ars Technica](https://arstechnica.com/science/2025/05/china-extends-its-reach-into-the-solar-system-with-launch-of-asteroid-mission/)

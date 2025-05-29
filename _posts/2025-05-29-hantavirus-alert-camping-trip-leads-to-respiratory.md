@@ -82,4 +82,4 @@ The case of the healthy camper who contracted hantavirus serves as a powerful re
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/health/2025/05/healthy-man-goes-camping-lands-in-icu-for-40-days-with-respiratory-failure/)
+Source: [Ars Technica](https://arstechnica.com/health/2025/05/healthy-man-goes-camping-lands-in-icu-for-40-days-with-respiratory-failure/)
