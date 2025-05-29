@@ -24,13 +24,20 @@ jobs:
       - name: Find latest Markdown file in last commit or stop workflow
         id: find_file
         run: |
+          # Check if the last commit message starts with "No Dispatch" (case insensitive)
+          LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
+          if echo "$LAST_COMMIT_MSG" | grep -iq "^No Dispatch"; then
+          echo "Last commit message indicates no dispatch. Stopping workflow."
+          exit 78
+          fi
+
           # Get list of .md files changed in the last commit
           FILES=$(git log -1 --name-only --pretty=format: | grep '\.md$' || true)
 
           # If no markdown files found, output a message and exit with code 78 (neutral)
           if [ -z "$FILES" ]; then
-            echo "No markdown files found in the last commit. Stopping workflow."
-            exit 78
+          echo "No markdown files found in the last commit. Stopping workflow."
+          exit 78
           fi
 
           # Otherwise, pick the first markdown file
