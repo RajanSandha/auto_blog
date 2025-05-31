@@ -30,7 +30,7 @@ From its inception, Google has revolutionized how we access information. However
 
 ### The DOJ's Case: Google's Anticompetitive Practices
 
-The DOJ's central claim is that Google has engaged in anticompetitive practices to maintain its monopoly in general search. After a lengthy trial that included expert testimony and detailed examination of Google's business dealings, the DOJ is now urging United States District Judge Amit Mehta to impose significant restrictions on Google's operations. One of the most drastic measures proposed is the **divestment of the Chrome browser** [link text](hypothetical_url_1). This move, if enacted, would be a major blow to Google and a significant victory for the DOJ.
+The DOJ's central claim is that Google has engaged in anticompetitive practices to maintain its monopoly in general search. After a lengthy trial that included expert testimony and detailed examination of Google's business dealings, the DOJ is now urging United States District Judge Amit Mehta to impose significant restrictions on Google's operations. One of the most drastic measures proposed is the **divestment of the Chrome browser**. This move, if enacted, would be a major blow to Google and a significant victory for the DOJ.
 
 ### The Shifting Sands of the Internet Landscape
 
@@ -67,7 +67,7 @@ The outcome of this antitrust case will have significant implications for the fu
 
 ### The Role of Emerging Technologies
 
-Emerging technologies like blockchain and decentralized search engines could offer alternative models for online search. These technologies have the potential to disrupt Google's dominance by creating more open and transparent search platforms [link text](hypothetical_url_2). However, they are still in their early stages of development and face significant challenges in terms of scalability, usability, and adoption.
+Emerging technologies like blockchain and decentralized search engines could offer alternative models for online search. These technologies have the potential to disrupt Google's dominance by creating more open and transparent search platforms. However, they are still in their early stages of development and face significant challenges in terms of scalability, usability, and adoption.
 
 ### The Future of Search: A Post-Google Internet? 
 
