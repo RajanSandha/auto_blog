@@ -88,4 +88,4 @@ Ready to try out Google Lens on YouTube Shorts? Keep an eye out for the feature 
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/entertainment/youtube/google-lens-is-coming-to-youtube-shorts-221803755.html?src=rss)
+Source: [Engadget](https://www.engadget.com/entertainment/youtube/google-lens-is-coming-to-youtube-shorts-221803755.html?src=rss)

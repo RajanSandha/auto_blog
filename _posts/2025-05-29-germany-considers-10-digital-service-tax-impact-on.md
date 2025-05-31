@@ -82,4 +82,4 @@ Germany's consideration of a 10% **digital service tax** on US **tech giants** h
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/big-tech/germany-is-considering-a-10-percent-digital-service-tax-on-us-tech-giants-195705330.html?src=rss)
+Source: [Engadget](https://www.engadget.com/big-tech/germany-is-considering-a-10-percent-digital-service-tax-on-us-tech-giants-195705330.html?src=rss)

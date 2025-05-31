@@ -28,7 +28,7 @@ Artificial intelligence (AI) is rapidly transforming industries, and the debate 
 
 ## The AI Job Displacement Warning
 
-In an interview with [Axios](URL), Amodei predicted that AI could eliminate up to half of all entry-level white-collar jobs within the next five years, potentially leading to a significant spike in unemployment, possibly as high as 20%. This alarming forecast has sparked considerable discussion and debate within the tech industry and beyond.
+In an interview with Axios, Amodei predicted that AI could eliminate up to half of all entry-level white-collar jobs within the next five years, potentially leading to a significant spike in unemployment, possibly as high as 20%. This alarming forecast has sparked considerable discussion and debate within the tech industry and beyond.
 
 ### Concerns About Entry-Level Positions
 
@@ -39,7 +39,7 @@ Amodei's primary concern revolves around the automation of tasks traditionally p
 *   Law
 *   Consulting
 
-He argues that AI's increasing capabilities in areas like natural language processing, data analysis, and decision-making are making it feasible to replace human workers in these roles. This concern aligns with a recent report covered by [Mashable](URL), which highlighted the growing impact of AI on entry-level tech jobs and the challenges faced by recent graduates entering the workforce.
+He argues that AI's increasing capabilities in areas like natural language processing, data analysis, and decision-making are making it feasible to replace human workers in these roles. This concern aligns with a recent report covered by Mashable, which highlighted the growing impact of AI on entry-level tech jobs and the challenges faced by recent graduates entering the workforce.
 
 ### The Responsibility of AI Companies
 

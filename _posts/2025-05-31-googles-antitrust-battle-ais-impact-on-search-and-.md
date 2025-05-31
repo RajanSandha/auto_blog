@@ -80,4 +80,4 @@ The Google antitrust case represents a pivotal moment for the internet. The outc
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/gadgets/2025/05/google-and-doj-tussle-over-how-ai-will-remake-the-web-in-antitrust-closing-arguments/)
+Source: [Ars Technica](https://arstechnica.com/gadgets/2025/05/google-and-doj-tussle-over-how-ai-will-remake-the-web-in-antitrust-closing-arguments/)
