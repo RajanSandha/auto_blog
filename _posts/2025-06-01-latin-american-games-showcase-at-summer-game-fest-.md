@@ -96,4 +96,4 @@ Don't forget to set a reminder and join the conversation online. Let's celebrate
 
 ---
 
-Source: [Engadget is a web magazine with obsessive daily coverage of everything new in gadgets and consumer electronics](https://www.engadget.com/gaming/how-to-watch-the-latin-american-games-showcase-at-summer-game-fest-2025-210009391.html?src=rss)
+Source: [Engadget](https://www.engadget.com/gaming/how-to-watch-the-latin-american-games-showcase-at-summer-game-fest-2025-210009391.html?src=rss)
