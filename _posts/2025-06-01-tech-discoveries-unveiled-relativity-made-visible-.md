@@ -35,7 +35,7 @@ One of the most famous aspects of Albert Einstein's special theory of relativity
 <img alt="The Terrell-Penrose-Effect: Fast objects appear rotated" class="none medium" height="427" src="https://cdn.arstechnica.net/wp-content/uploads/2025/05/Low-Res_TerrellPenrose-640x427.jpg" width="640" />
 Credit: TU Wien
 
-Physicists at the Vienna University of Technology have successfully recreated this rotational effect in a lab setting. Using precisely timed laser pulses and high-precision cameras, they were able to observe and measure the effect. Their findings were published in the journal *Communications Physics* [link text](https://www.nature.com/articles/s42005-025-02003-6), marking a significant step in understanding and visualizing the complexities of special relativity.
+Physicists at the Vienna University of Technology have successfully recreated this rotational effect in a lab setting. Using precisely timed laser pulses and high-precision cameras, they were able to observe and measure the effect. Their findings were published in the journal *[Communications Physics](https://www.nature.com/articles/s42005-025-02003-6)*, marking a significant step in understanding and visualizing the complexities of special relativity.
 
 ### The Implications
 
@@ -75,4 +75,4 @@ In conclusion, the world of technology and science is constantly evolving, with 
 
 ---
 
-Source: [Ars Technica - All content](https://arstechnica.com/science/2025/05/research-roundup-ping-pong-bots-the-genetic-key-for-ginger-cats-and-more/)
+Source: [Ars Technica](https://arstechnica.com/science/2025/05/research-roundup-ping-pong-bots-the-genetic-key-for-ginger-cats-and-more/)

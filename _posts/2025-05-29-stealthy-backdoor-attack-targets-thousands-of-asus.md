@@ -29,7 +29,7 @@ Thousands of Asus routers are under siege from a sophisticated, persistent backd
 
 ## Asus Routers Under Attack: A Deep Dive
 
-Researchers at GreyNoise [link text](https://www.greynoise.io/) have uncovered a stealthy backdoor campaign targeting Asus routers. This attack isn't just a fleeting vulnerability; it's designed for long-term, persistent access, making it particularly dangerous.
+[Researchers at GreyNoise](https://www.greynoise.io/) have uncovered a stealthy backdoor campaign targeting Asus routers. This attack isn't just a fleeting vulnerability; it's designed for long-term, persistent access, making it particularly dangerous.
 
 ### The Attack Vector: Exploiting Vulnerabilities
 
