@@ -42,7 +42,7 @@ Currently, **Veo 3** is available to **Gemini Ultra** subscribers in the US and 
 *   **Gemini Ultra:** The most expensive tier, currently at $125 per month for the first three months (usually $250). 
 *   **Vertex:** Google's AI enterprise platform. 
 
-If you're not ready to drop that kind of cash, you can try **Veo 2** with Google AI's Pro plan, which offers a one-month free trial and then costs $20 per month. [link text](https://www.example.com/veo2-review) (Placeholder for Veo 2 review link)
+If you're not ready to drop that kind of cash, you can try **Veo 2** with Google AI's Pro plan, which offers a one-month free trial and then costs $20 per month.
 
 Remember Google's **Gemini privacy policy**: they collect data to improve their tech, so avoid sharing sensitive information. You also agree to their , which bans abusive or illegal content.
 
@@ -60,13 +60,13 @@ One downside is the lack of editing capabilities. Unlike other AI tools, **Veo 3
 
 Speaking of time, expect to wait 3-5 minutes for each video, even after editing. 
 
-But the biggest frustration was the daily generation limit. After only five videos, I was locked out for 24 hours. According to Google's VP of Gemini and Google Labs, Josh Woodward, [link text](https://twitter.com/joshwoodward) (Placeholder for Josh Woodward's Twitter), Ultra subscribers have the highest limits, but it still felt restrictive.
+But the biggest frustration was the daily generation limit. After only five videos, I was locked out for 24 hours. According to Google's VP of Gemini and Google Labs, [Josh Woodward](https://twitter.com/joshwoodward), Ultra subscribers have the highest limits, but it still felt restrictive.
 
 ### Is Gemini Ultra & Veo 3 Worth It?
 
 **Veo 3** shows promise, particularly with its audio generation. However, the limitations, especially the lack of editing tools and the restrictive daily limit, make it hard to recommend for professional use. For casual users curious about AI video generation, the cheaper **Veo 2** might be a better starting point.
 
-Ready to explore the world of AI video? Try out the free trial of Veo 2 and see if AI video generation is right for you! [link text](https://ai.google.dev/products/veo) (Placeholder for Google Veo link)
+Ready to explore the world of AI video? Try out the free trial of Veo 2 and see if AI video generation is right for you! [Google Veo](https://ai.google.dev/products/veo)
 
 ---
 

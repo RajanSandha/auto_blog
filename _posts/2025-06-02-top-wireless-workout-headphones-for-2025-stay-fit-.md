@@ -41,10 +41,10 @@ Let's dive into the world of **wireless earbuds** designed to withstand your tou
 
 While a definitive list requires hands-on testing, based on current trends and reviews, here are some brands and models to watch:
 
-*   **Beats Fit Pro:** Known for their secure fit, impressive sound quality, and effective noise cancellation. [link text](https://www.beatsbydre.com/)
-*   **JLab Go Air Sport+:** An affordable option that doesn't compromise on comfort or sound. [link text](https://www.jlab.com/)
-*   **SHOKZ OpenFit 2:** Open-ear design for situational awareness, perfect for outdoor activities. [link text](https://shokz.com/)
-*   **H2O Audio Ript Ultra:** Over-ear headphones designed for swimming and water sports. [link text](https://www.h2oaudio.com/)
+*   **Beats Fit Pro:** Known for their secure fit, impressive sound quality, and effective noise cancellation. [beatsbydre.com](https://www.beatsbydre.com/)
+*   **JLab Go Air Sport+:** An affordable option that doesn't compromise on comfort or sound. [jlab.com](https://www.jlab.com/)
+*   **SHOKZ OpenFit 2:** Open-ear design for situational awareness, perfect for outdoor activities. [shokz.com](https://shokz.com/)
+*   **H2O Audio Ript Ultra:** Over-ear headphones designed for swimming and water sports. [h2oaudio.com](https://www.h2oaudio.com/)
 
 ## Factors to Consider When Choosing Workout Headphones
 

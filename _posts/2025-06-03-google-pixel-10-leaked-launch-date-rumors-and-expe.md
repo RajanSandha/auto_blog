@@ -38,7 +38,7 @@ While concrete information is still under wraps, several leaks and reports offer
 
 ### Rumored August Launch Date
 
-The most recent buzz revolves around a potential launch date. A leaker on X (formerly Twitter) suggested an August 13 unveiling. [link text](https://x.com/MysteryLupin/status/1929539618031989074) Subsequently, Android Headlines reported a Made by Google Event on August 20, with shipments commencing on August 28. [link text](https://www.androidheadlines.com/google-pixel-10-release-date) According to them, the lineup could include the **Pixel 10**, **10 Pro**, **10 Pro XL**, and the foldable **Pixel 10 Pro Fold**.
+The most recent buzz revolves around a potential launch date. A leaker on X (formerly Twitter) suggested an August 13 unveiling. [MysteryLupin](https://x.com/MysteryLupin/status/1929539618031989074) Subsequently, Android Headlines reported a Made by Google Event on August 20, with shipments commencing on August 28. [androidheadlines.com](https://www.androidheadlines.com/google-pixel-10-release-date) According to them, the lineup could include the **Pixel 10**, **10 Pro**, **10 Pro XL**, and the foldable **Pixel 10 Pro Fold**.
 
 *   **Important Note:** These dates are unconfirmed, so take them with a grain of salt. Google might still be finalizing plans.
 
@@ -52,13 +52,13 @@ Historically, Google announces its Pixel lineup in August. Based on previous lau
 
 ### Speculated Specs: Tensor G5 Chipset
 
-For the past few years, Google has equipped Pixel phones with its custom Tensor chipset. All signs point towards the **Tensor G5** powering the Pixel 10. While it might not represent a massive performance leap, it's expected to deliver smooth operation and optimized battery life. [link text](https://www.androidauthority.com/how-google-built-tensor-g5-3535489/)
+For the past few years, Google has equipped Pixel phones with its custom Tensor chipset. All signs point towards the **Tensor G5** powering the Pixel 10. While it might not represent a massive performance leap, it's expected to deliver smooth operation and optimized battery life. [androidauthority.com](https://www.androidauthority.com/how-google-built-tensor-g5-3535489/)
 
 The Tensor G5 will likely unlock new AI capabilities, although specific details remain a mystery.
 
 ### Potential Pricing
 
-While official pricing is unknown, reports suggest the Pixel 10 and Pixel 10 Pro could retain the same price points as their predecessors: $799 and $999, respectively. [link text](https://www.androidheadlines.com/google-pixel-10-price)
+While official pricing is unknown, reports suggest the Pixel 10 and Pixel 10 Pro could retain the same price points as their predecessors: $799 and $999, respectively. [androidheadlines.com](https://www.androidheadlines.com/google-pixel-10-price)
 
 ## The Road Ahead for Google Pixel
 
