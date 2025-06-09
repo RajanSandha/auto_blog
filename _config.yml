@@ -113,11 +113,11 @@ analytics:
 # Advertisement Settings
 advertisements:
   enable                 : true # true, false (default)
-  provider               : "adsterra" # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
+  provider               : "adsense" # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
   position               : sidebar # sidebar, content, header
   # Google AdSense
   adsense:
-    client_id            : # e.g. ca-pub-1234567890123456
+    client_id            : ca-pub-6648553894310419 # e.g. ca-pub-1234567890123456
     sidebar_ad_slot      : # AdSense Ad Slot ID
   # Mediavine
   mediavine:
