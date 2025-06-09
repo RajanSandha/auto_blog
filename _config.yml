@@ -114,7 +114,7 @@ analytics:
 advertisements:
   enable                 : true # true, false (default)
   provider               : "adsense" # "adsense", "mediavine", "ezoic", "raptive", "adsterra", "propeller"
-  position               : sidebar # sidebar, content, header
+  position               : content # sidebar, content, header
   # Google AdSense
   adsense:
     client_id            : ca-pub-6648553894310419 # e.g. ca-pub-1234567890123456
