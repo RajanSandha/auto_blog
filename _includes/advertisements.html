@@ -2,10 +2,11 @@
   <div class="advertisement-wrapper">
     {% case site.advertisements.provider %}
       {% when "adsense" %}
-        {% if site.advertisements.adsense.client_id and site.advertisements.adsense.sidebar_ad_slot %}
+        {% if site.advertisements.adsense.client_id %}
           <div class="ad-container adsense-ad">
             <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.advertisements.adsense.client_id }}"
                  crossorigin="anonymous"></script>
+            {% if site.advertisements.adsense.sidebar_ad_slot %}
             <!-- Sidebar Ad -->
             <ins class="adsbygoogle"
                  style="display:block"
@@ -16,6 +17,7 @@
             <script>
                  (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
+          {% endif %}
           </div>
         {% endif %}
       
