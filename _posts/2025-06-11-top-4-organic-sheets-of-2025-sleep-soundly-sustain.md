@@ -58,7 +58,7 @@ We've done the research and the sleeping (it's a tough job, but someone's gotta 
 
 !
 
-If you love the crisp, cool feel of hotel bedding, the Brooklinen Organic Cotton Sheets [link to Brooklinen] are for you. Made from GOTS-certified **organic cotton**, these **percale sheets** have a light and breathable 270 thread count. They're slightly softer than Brooklinen's regular **percale** sheets, but still maintain that signature crispness that **percale** lovers crave. Perfect for **hot sleepers** and warm summer nights.
+If you love the crisp, cool feel of hotel bedding, the Brooklinen Organic Cotton Sheets are for you. Made from GOTS-certified **organic cotton**, these **percale sheets** have a light and breathable 270 thread count. They're slightly softer than Brooklinen's regular **percale** sheets, but still maintain that signature crispness that **percale** lovers crave. Perfect for **hot sleepers** and warm summer nights.
 
 *   **Material:** **Organic Cotton**
 *   **Certifications:** GOTS, Oeko-Tex
@@ -71,7 +71,7 @@ If you love the crisp, cool feel of hotel bedding, the Brooklinen Organic Cotton
 
 !
 
-Want the breathability of **percale** with a softer touch? The Citizenry's Organic Stonewashed Percale Sheet Set [link to The Citizenry] is the answer. Made from long-staple **organic cotton**, these **sheets** are incredibly soft and durable. The long-staple cotton requires fewer threads, making them even more breathable. A great budget-friendly option for those seeking **organic bedding** without sacrificing comfort. These are also great for **hot sleepers**.
+Want the breathability of **percale** with a softer touch? The Citizenry's Organic Stonewashed Percale Sheet Set is the answer. Made from long-staple **organic cotton**, these **sheets** are incredibly soft and durable. The long-staple cotton requires fewer threads, making them even more breathable. A great budget-friendly option for those seeking **organic bedding** without sacrificing comfort. These are also great for **hot sleepers**.
 
 *   **Material:** Organic, Long-Staple Cotton
 *   **Certifications:** GOTS, Oeko-Tex
@@ -84,7 +84,7 @@ Want the breathability of **percale** with a softer touch? The Citizenry's Organ
 
 !
 
-Known for their **organic mattresses**, Avocado also makes luxurious **organic cotton sheets** [link to Avocado]. These **sateen sheets** have a silky smooth finish that feels like sleeping on silk or satin. Made from 100% GOTS-certified **organic cotton** from India, these **sheets** also have the Made Safe certification, ensuring they're free from harmful chemicals. The 600-thread-count version is less breathable and better for those who aren't **hot sleepers**.
+Known for their **organic mattresses**, Avocado also makes luxurious **organic cotton sheets**. These **sateen sheets** have a silky smooth finish that feels like sleeping on silk or satin. Made from 100% GOTS-certified **organic cotton** from India, these **sheets** also have the Made Safe certification, ensuring they're free from harmful chemicals. The 600-thread-count version is less breathable and better for those who aren't **hot sleepers**.
 
 *   **Material:** **Organic Cotton**
 *   **Certifications:** GOTS, Made Safe
@@ -97,7 +97,7 @@ Known for their **organic mattresses**, Avocado also makes luxurious **organic c
 
 !
 
-For the ultimate in silky softness and cooling comfort, look no further than the Ettitude CleanBamboo Sheet Set [link to Amazon]. Made from 100% **organic bamboo** lyocell, these **sheets** are incredibly soft, breathable, and moisture-wicking. **Bamboo sheets** are a great choice for **hot sleepers** as they naturally regulate temperature, keeping you cool and comfortable all night long. They are also hypoallergenic, making them a good option for those with sensitivities.
+For the ultimate in silky softness and cooling comfort, look no further than the Ettitude CleanBamboo Sheet Set. Made from 100% **organic bamboo** lyocell, these **sheets** are incredibly soft, breathable, and moisture-wicking. **Bamboo sheets** are a great choice for **hot sleepers** as they naturally regulate temperature, keeping you cool and comfortable all night long. They are also hypoallergenic, making them a good option for those with sensitivities.
 
 *   **Material:** Organic Bamboo Lyocell
 *   **Certifications:** Not specified in the provided text, but Ettitude often emphasizes sustainable practices.
@@ -119,7 +119,7 @@ Investing in **organic sheets** is an investment in your health, your comfort, a
 
 Ready to experience the difference? Browse our top picks and start sleeping soundly tonight!
 
-[link to relevant product category on a website, e.g., "Shop Organic Sheets Now!"]
+[Google Sheet](https://docs.google.com/spreadsheets/d/1y2Oc4IqUCVvS7osdLTli_x-5nBahmHABLVA-IRQWWkw/edit?usp=sharing)
 
 ---
 

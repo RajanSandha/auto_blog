@@ -55,8 +55,8 @@ The existence of an *Oblivion* remaster was first hinted at in 2023, thanks to l
 
 ## Where to Get *Oblivion Remastered*:
 
-*   **Steam:** Head over to the Steam store to purchase and download *Oblivion Remastered* for PC. [Link to Steam Store (replace with actual link)]
-*   **Xbox Series X / S:** Find *Oblivion Remastered* in the Xbox Store and start your adventure on your console. [Link to Xbox Store (replace with actual link)]
+*   **Steam:** Head over to the Steam store to purchase and download *Oblivion Remastered* for PC.
+*   **Xbox Series X / S:** Find *Oblivion Remastered* in the Xbox Store and start your adventure on your console.
 
 ## Is *Oblivion Remastered* Worth It?
 

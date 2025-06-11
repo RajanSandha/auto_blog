@@ -89,7 +89,7 @@ The key to finding the perfect **unique gift** is to consider his individual int
 
 Finding **unique gifts for men** who have everything doesn't have to be a struggle. With a little creativity and some knowledge of his interests, you can find a gift that will truly impress him. From smart home upgrades to immersive entertainment to gadgets for the tech tinkerer, there's a perfect tech gift out there for every man. So, go ahead and explore the possibilities and find the gift that will make him say, "This is exactly what I wanted!"
 
-Ready to find the perfect tech gift? Browse our curated selection of the latest and greatest gadgets and accessories. [Link to your product page]
+Ready to find the perfect tech gift? Browse our curated selection of the latest and greatest gadgets and accessories. [Google Sheet](https://docs.google.com/spreadsheets/d/1y2Oc4IqUCVvS7osdLTli_x-5nBahmHABLVA-IRQWWkw/edit?usp=sharing)
 
 ---
 

@@ -31,7 +31,7 @@ Silicon Valley, the global hub of technological innovation, thrives on a diverse
 
 ### The Uncanny Valley: Immigration's Impact on Tech
 
-Recently, the Uncanny Valley podcast [link to Uncanny Valley Podcast] delved into this critical issue, discussing how changes in immigration policy, particularly under the Trump administration, could significantly affect the tech landscape. From increased scrutiny of H-1B visas to potential revocations of student visas, the implications are far-reaching. Let's unpack the key arguments and explore why **Silicon Valley needs immigration** to maintain its competitive edge.
+Recently, the Uncanny Valley podcast delved into this critical issue, discussing how changes in immigration policy, particularly under the Trump administration, could significantly affect the tech landscape. From increased scrutiny of H-1B visas to potential revocations of student visas, the implications are far-reaching. Let's unpack the key arguments and explore why **Silicon Valley needs immigration** to maintain its competitive edge.
 
 ## The Trump Administration's Immigration Policies: A Closer Look
 
@@ -104,7 +104,7 @@ The challenges facing Silicon Valley highlight the need for comprehensive immigr
 
 By embracing immigration, Silicon Valley can continue to thrive as a global center of innovation and economic growth.
 
-**In conclusion,** immigration is not just a social issue; it's an economic imperative for Silicon Valley. By attracting and retaining top talent from around the world, the region can maintain its competitive edge and drive **future innovations**. It's time for policymakers to recognize the importance of immigration and enact reforms that support a vibrant and dynamic tech industry. Want to learn more about how immigration impacts the tech industry? [link to relevant resource].
+**In conclusion,** immigration is not just a social issue; it's an economic imperative for Silicon Valley. By attracting and retaining top talent from around the world, the region can maintain its competitive edge and drive **future innovations**. It's time for policymakers to recognize the importance of immigration and enact reforms that support a vibrant and dynamic tech industry. Want to learn more about how immigration impacts the tech industry?
 
 ---
 
