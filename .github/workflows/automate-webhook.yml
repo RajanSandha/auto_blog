@@ -91,7 +91,9 @@ jobs:
             | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//' \
             | sed 's/\.md$//')
           CAT_SLUG=$(echo "${CATS[0]}" | tr '[:upper:]' '[:lower:]')
-          POST_LINK="${SITE_URL}/$(printf "%s" "$CAT_SLUG" | jq -sRr @uri)/${POST_SLUG}"
+            # Remove trailing '-' from POST_SLUG if exists
+            POST_SLUG=$(echo "$POST_SLUG" | sed 's/-$//')
+            POST_LINK="${SITE_URL}/$(printf "%s" "$CAT_SLUG" | jq -sRr @uri)/${POST_SLUG}"
 
           # assemble JSON
           PAYLOAD=$(jq -n \
