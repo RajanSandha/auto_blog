@@ -26,7 +26,6 @@ header:
   teaser: /assets/images/ironheart_believes_the_children_are_the_future_20250625010444.jpg
 ---
 
-```markdown
 ![Ironheart Armor](https://platform.theverge.com/wp-content/uploads/sites/2/2025/06/WGY-101-00248_RC.jpg?quality=90&strip=all&crop=0,0,100,100)
 
 ## Ironheart: A New Generation of Heroes for the MCU?
@@ -82,7 +81,6 @@ With Ironheart poised to become a major player in the MCU, here's what we can an
 Ironheart represents a bold step forward for Marvel. By embracing diversity, innovation, and the power of the next generation, the MCU is positioning itself for continued success. Whether you're a die-hard comic book fan or a casual moviegoer, Ironheart's journey is one worth watching.
 
 What are your thoughts on Ironheart and the future of the MCU? Share your opinions in the comments below!
-```
 
 ---
 
