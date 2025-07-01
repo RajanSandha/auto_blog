@@ -33,8 +33,6 @@ header:
 
 Apple's gamble on the big screen seems to have paid off, at least initially. *F1 the Movie*, starring Brad Pitt, has roared into theaters with a stunning $144 million global opening weekend, including $55.6 million domestically, according to Comscore. This marks a significant win for Apple Original Films, surpassing expectations and outperforming other major releases. But is this success sustainable, and are there potential pitfalls on the horizon?
 
-[Include Image Here]
-
 ![F1 the Movie](https://o.aolcdn.com/images/dims?image_uri=https%3A%2F%2Fs.yimg.com%2Fos%2Fcreatr-uploaded-images%2F2025-06%2F9dd311f0-5522-11f0-bf79-bde49e525093&resize=1400%2C787&client=19f2b5e49a271b2bde77&signature=e973293637f1ca6e6320536c1d1d411fa33bf5ac)
 
 ### A Risky Venture Pays Off

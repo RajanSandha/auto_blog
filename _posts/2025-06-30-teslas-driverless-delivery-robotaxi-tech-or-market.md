@@ -31,7 +31,7 @@ Tesla recently orchestrated a splashy demonstration, delivering a Model Y from i
 
 The 15-mile journey, as reported by TechCrunch and showcased in a 30-minute video, involved navigating highways, surface streets, and even a roundabout. The Model Y was supposedly equipped with the same software powering Tesla's limited robotaxi service in Austin. However, upon delivery, the software was downgraded to the commercially available "Full Self-Driving (Supervised)" version, which requires constant driver attention and intervention.
 
-[Include Image of Tesla Model Y here if provided]
+![Tesla Model Y](https://digitalassets.tesla.com/tesla-contents/image/upload/f_auto,q_auto/Model-Y-2-Along-the-Way-Desktop.jpg)
 
 This raises a crucial question: Was this a genuine display of autonomous capability, or a carefully orchestrated marketing stunt designed to boost Tesla's stock price and public perception, especially given recent sales figures?
 
