@@ -1,168 +1,35 @@
-# .github/workflows/test-webhook-payload.yml
-name: "Test: Dispatch Latest Post to Webhook (Manual with Debug)"
+name: Test Webhook URL Selection
 
 on:
   workflow_dispatch:
 
 jobs:
-  debug-webhook:
+  test-webhook-selection:
     runs-on: ubuntu-latest
-
+    env:
+      WEBHOOK_URL: ${{ secrets.MY_WEBHOOK_URL }}
+      WEBHOOK_URL_2: ${{ secrets.MY_WEBHOOK_URL_2 }}
+      WEBHOOK_URL_3: ${{ secrets.MY_WEBHOOK_URL_3 }}
+      SITE_URL: ${{ secrets.MY_SITE_URL }}
     steps:
-      - name: "Step 1: Checkout repository (full history)"
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-
-      - name: "Debug: List repo files"
+      - name: Print all webhook URLs and site URL
         run: |
-          echo "🔍 Repo root contents:"
-          ls -R .
+          echo "WEBHOOK_URL: $WEBHOOK_URL"
+          echo "WEBHOOK_URL_2: $WEBHOOK_URL_2"
+          echo "WEBHOOK_URL_3: $WEBHOOK_URL_3"
+          echo "SITE_URL: $SITE_URL"
 
-      - name: "Step 2: Find last committed .md (with fallback)"
-        id: find_file
+      - name: Select webhook URL based on date remainder and print selection
         run: |
-          FILES=$(git log -1 --name-only --pretty=format: | grep '\.md$' || true)
-          if [ -n "$FILES" ]; then
-            FILE=$(echo "$FILES" | head -n1)
-            echo "✔️ Found in last commit: $FILE"
-          else
-            FILE=$(find _posts -type f -name '*.md' | sort | tail -n1)
-            echo "⚠️ No .md in last commit, falling back to newest in _posts/: $FILE"
-          fi
-          echo "file=$FILE" >> $GITHUB_OUTPUT
-
-      - name: "Step 3: Show raw front-matter"
-        run: |
-          F="${{ steps.find_file.outputs.file }}"
-          if [ -z "$F" ]; then
-            echo "❌ ERROR: no file to read!"
-            exit 1
-          fi
-          echo "📄 Reading front-matter from: $F"
-          sed -n '/^---$/,/^---$/p' "$F" || true
-
-      - name: "Step 4: Parse front-matter fields (fixed categories & tags)"
-        id: parse
-        run: |
-          F="${{ steps.find_file.outputs.file }}"
-          FM=$(sed -n '/^---$/,/^---$/p' "$F" | sed '1d;$d')
-
-          echo "----- RAW FRONT-MATTER -----"
-          echo "$FM"
-          echo "----------------------------"
-
-          # title
-          TITLE=$(echo "$FM" | awk -F": " '/^title: /{print substr($0, index($0,$2))}' \
-                  | sed "s/^'//;s/'$//")
-          echo "🔹 title:       $TITLE"
-
-          # description (excerpt until toc:)
-          DESCRIPTION=$(echo "$FM" | awk '
-            /^excerpt:/ {
-              sub(/^excerpt:[[:space:]]*/,"")
-              desc = $0; next
-            }
-            /^[[:space:]]+/ && desc != "" {
-              line = $0; sub(/^[[:space:]]*/,"",line)
-              desc = desc " " line; next
-            }
-            /^toc:/ { exit }
-            END { print desc }
-          ' | sed "s/^'//;s/'$//;s/[[:space:]]\{2,\}/ /g")
-          echo "🔹 description: $DESCRIPTION"
-
-          # categories & tags via loop
-          CATS=(); TAGS=(); mode=""
-
-          while IFS= read -r line; do
-            if [[ $line =~ ^categories: ]]; then
-              mode="cat"; continue
-            elif [[ $line =~ ^tags: ]]; then
-              mode="tag"; continue
-            elif [[ $line =~ ^[[:alnum:]] ]]; then
-              mode=""; 
-            fi
-
-            if [[ $mode == "cat" && $line =~ ^[[:space:]]*-\ (.+) ]]; then
-              CATS+=("${BASH_REMATCH[1]}")
-            elif [[ $mode == "tag" && $line =~ ^[[:space:]]*-\ (.+) ]]; then
-              TAGS+=("${BASH_REMATCH[1]}")
-            fi
-          done <<< "$FM"
-
-          echo "🔹 categories:  ${CATS[*]}"
-          echo "🔹 tags:        ${TAGS[*]}"
-
-          # hashtags
-          HASHTAGS=$(printf "#%s " "${TAGS[@]}" | sed 's/ $//')
-          echo "🔹 hashtags:    $HASHTAGS"
-
-          # image path
-          TEASER=$(echo "$FM" | awk '/^  teaser: /{print $2}' | sed 's#^/##')
-          IMAGE_PATH="https://blog.lynxo.in/${TEASER}"
-          echo "🔹 image_path:  $IMAGE_PATH"
-
-          # slug
-          BASENAME=$(basename "$F")
-          POST_SLUG=$(echo "$BASENAME" \
-            | sed -E 's/^[0-9]{4}-[0-9]{2}-[0-9]{2}-//' \
-            | sed 's/\.md$//')
-          echo "🔹 post_slug:   $POST_SLUG"
-
-          # post_link
-          CAT_SLUG=$(echo "${CATS[0]:-}" | tr '[:upper:]' '[:lower:]')
-          POST_LINK="https://blog.lynxo.in/${CAT_SLUG}/${POST_SLUG}"
-          echo "🔹 post_link:   $POST_LINK"
-
-          # export
-          echo "title=$TITLE"            >> $GITHUB_OUTPUT
-          echo "description=$DESCRIPTION" >> $GITHUB_OUTPUT
-          echo "categories=${CATS[*]}"    >> $GITHUB_OUTPUT
-          echo "tags=${TAGS[*]}"          >> $GITHUB_OUTPUT
-          echo "hashtags=$HASHTAGS"       >> $GITHUB_OUTPUT
-          echo "image_path=$IMAGE_PATH"   >> $GITHUB_OUTPUT
-          echo "post_slug=$POST_SLUG"     >> $GITHUB_OUTPUT
-          echo "post_link=$POST_LINK"     >> $GITHUB_OUTPUT
-
-
-      - name: "Step 5: Build and echo JSON payload"
-        id: payload
-        run: |
-          echo "💡 Assembling JSON payload..."
-          PAYLOAD=$(jq -n \
-            --arg site_url "https://blog.lynxo.in" \
-            --arg title "${{ steps.parse.outputs.title }}" \
-            --arg description "${{ steps.parse.outputs.description }}" \
-            --arg post_slug "${{ steps.parse.outputs.post_slug }}" \
-            --arg image_path "${{ steps.parse.outputs.image_path }}" \
-            --argjson tags "$(printf '%s\n' ${{ steps.parse.outputs.tags }} | jq -R . | jq -s .)" \
-            --arg hashtags "${{ steps.parse.outputs.hashtags }}" \
-            --argjson categories "$(printf '%s\n' ${{ steps.parse.outputs.categories }} | jq -R . | jq -s .)" \
-            --arg post_link "${{ steps.parse.outputs.post_link }}" \
-            --arg author "Rajan Sandha" \
-            '{
-              site_url: $site_url,
-              title: $title,
-              description: $description,
-              post_slug: $post_slug,
-              image_path: $image_path,
-              tags: $tags,
-              hashtags: $hashtags,
-              categories: $categories,
-              post_link: $post_link,
-              author: $author
-            }'
-          )
-          echo "📤 Payload:"
-          echo "$PAYLOAD"
-          echo "payload=$PAYLOAD" >> $GITHUB_OUTPUT
-
-      - name: "Step 6: POST to webhook (disabled)"
-        if: false
-        run: |
-          echo "Would send to ${{ secrets.MY_WEBHOOK_URL }}:"
-          echo "${{ steps.payload.outputs.payload }}"
-          # curl -X POST -H 'Content-Type: application/json' \
-          #      -d "${{ steps.payload.outputs.payload }}" \
-          #      "${{ secrets.MY_WEBHOOK_URL }}"
+          DAY=$(date +%d)
+          REMAINDER=$((DAY % 4))
+          echo "Today's day of month: $DAY"
+          echo "Remainder (DAY % 4): $REMAINDER"
+          SELECTED_WEBHOOK=""
+          case $REMAINDER in
+            0) SELECTED_WEBHOOK="$WEBHOOK_URL" ;;
+            1) SELECTED_WEBHOOK="$WEBHOOK_URL_2" ;;
+            2) SELECTED_WEBHOOK="$WEBHOOK_URL_3" ;;
+            *) SELECTED_WEBHOOK="None" ;;
+          esac
+          echo "Selected webhook URL: $SELECTED_WEBHOOK"
