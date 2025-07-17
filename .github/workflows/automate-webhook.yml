@@ -27,8 +27,8 @@ jobs:
           # Check if the last commit message starts with "No Dispatch" (case insensitive)
           LAST_COMMIT_MSG=$(git log -1 --pretty=%B)
           if echo "$LAST_COMMIT_MSG" | grep -iq "^No Dispatch"; then
-            echo "Last commit message indicates no dispatch. Stopping workflow."
-            exit 78
+          echo "Last commit message indicates no dispatch. Stopping workflow."
+          exit 78
           fi
 
           # Get list of .md files changed in the last commit
@@ -36,31 +36,21 @@ jobs:
 
           # If no markdown files found, output a message and exit with code 78 (neutral)
           if [ -z "$FILES" ]; then
-            echo "No markdown files found in the last commit. Stopping workflow."
-            exit 78
+          echo "No markdown files found in the last commit. Stopping workflow."
+          exit 78
           fi
 
           # Otherwise, pick the first markdown file
           FILE=$(echo "$FILES" | head -n1)
           echo "file=$FILE" >> $GITHUB_OUTPUT
 
-      - name: Select Webhook URL based on Date
-        id: select_webhook
-        run: |
-          DAY=$(date +%-d)
-          if (( DAY <= 10 )); then
-            URL="${{ secrets.MY_WEBHOOK_URL }}"
-          elif (( DAY <= 20 )); then
-            URL="${{ secrets.MY_WEBHOOK_URL_2 }}"
-          else
-            URL="${{ secrets.MY_WEBHOOK_URL_3 }}"
-          fi
-          echo "SELECTED_WEBHOOK_URL=$URL" >> $GITHUB_ENV
-
       - name: Parse front-matter and build payload
         id: payload
         env:
           SITE_URL: https://blog.lynxo.in
+          WEBHOOK_URL: ${{ secrets.MY_WEBHOOK_URL }}
+          WEBHOOK_URL_2: ${{ secrets.MY_WEBHOOK_URL_2 }}
+          WEBHOOK_URL_3: ${{ secrets.MY_WEBHOOK_URL_3 }}
         run: |
           F="${{ steps.find_file.outputs.file }}"
           FM=$(sed -n '/^---$/,/^---$/p' "$F" | sed '1d;$d')
@@ -132,15 +122,23 @@ jobs:
               author:        $author
             }'
           )
-          
-          # Make the payload available to the next step
-          echo "payload=$PAYLOAD" >> $GITHUB_OUTPUT
 
-      - name: Send to Webhook
-        env:
-          SELECTED_WEBHOOK_URL: ${{ env.SELECTED_WEBHOOK_URL }}
-        run: |
+          #Select webhook URL based on date remainder
+          DAY=$(date +%d)
+          REMAINDER=$((DAY % 4))
+          echo "Today's day of month: $DAY"
+          echo "Remainder (DAY % 4): $REMAINDER"
+          SELECTED_WEBHOOK=""
+          case $REMAINDER in
+            0) SELECTED_WEBHOOK="$WEBHOOK_URL" ;;
+            1) SELECTED_WEBHOOK="$WEBHOOK_URL_2" ;;
+            2) SELECTED_WEBHOOK="$WEBHOOK_URL_3" ;;
+            *) SELECTED_WEBHOOK="$WEBHOOK_URL" ;;
+          esac
+          echo "Selected webhook URL: $SELECTED_WEBHOOK"
+
+          # send to webhook
           curl -X POST \
                -H "Content-Type: application/json" \
-               -d '${{ steps.payload.outputs.payload }}' \
-               "$SELECTED_WEBHOOK_URL"
+               -d "$PAYLOAD" \
+               "$SELECTED_WEBHOOK"
